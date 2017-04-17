@@ -1,0 +1,330 @@
+<div class="box rounded-box" >
+			<div class="clearfix pdg20-LR">
+                <div class="border-b box-tit">
+                    <h4>上网设置</h4>
+                    <a class="bnt-help" title="帮助"></a>
+                </div>
+                
+                <div class="H40"></div>
+                <div class="fc seitchH-radio  clearfix ">
+                    <div class="menu">
+                        <label class="radio radio-hidden menu-tit menu-tit-pad50" style="">
+                            <input type="radio" name="dc" checked="checked">
+                            PPPOE
+                        </label>
+                        <label class="radio radio-hidden menu-tit menu-tit-pad50" style=" border-left:1px solid #0088cc; border-right:1px solid #0088cc;">
+                            <input type="radio" name="dc" >
+                            DHCP
+                        </label>
+                        <label class="radio radio-hidden menu-tit menu-tit-pad50" style="">
+                            <input type="radio" name="dc" >
+                            静态IP
+                        </label>
+                    </div>
+                </div>
+                <div class="H40 col"></div>
+                <ul class="seitchH-ul">
+                    <!--PPPOE-->
+                    <li>
+                        <h4 >系统检测使用PPPOE方式</h4>
+                        
+                        <!--未连接-->
+                        <table class="tab-switch" border="0" cellspacing="0" cellpadding="6">
+                          <tr>
+                            <td style=" width:100px;">账号:</td>
+                            <td>
+                                <input class="inptText rounded fl" type="text" name="">
+                                <p class="fl inptP">
+                                    <span class="colorR">&nbsp;*</span>
+                                    <span class="colorR">&nbsp;错误提示错误提示错误提示</span>
+                                </p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>密码:</td>
+                            <td>
+                                <input class="inptText rounded fl" type="password" name="">
+                                <p class="fl inptP">
+                                    <span class="colorR">&nbsp;*</span>
+                                    <span class="colorR">&nbsp;错误提示错误提示错误提示</span>
+                                </p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>MAC地址:</td>
+                            <td>
+                                <div class="selectBox fl" >
+                                    <input class="inptText selectInpt rounded" type="text" readonly="readonly" name="" value="默认"  >
+                                    <ul class="selectUl tab-switch-key">
+                                        <li data-value="默认">默认</li>
+                                        <li data-value="克隆本机MAC">克隆本机MAC</li>
+                                        <li data-value="手动MAC地址">手动MAC地址</li>
+                                    </ul>
+                                </div><!--selectBox-->
+                            </td>
+                          </tr>
+                          <tr class="tab-switch-div">
+                            <td colspan="2"></td>
+                          </tr>
+                          <tr class="tab-switch-div">
+                            <td>本机MAC:</td>
+                            <td>&nbsp;&nbsp;&nbsp;b0:90:27:e8:d5:07 </td>
+                          </tr>
+                          <tr class="tab-switch-div">
+                            <td>手动MAC地址:</td>
+                            <td>
+                            	<input class="inptText rounded fl" type="text" name="">
+                                <p class="fl inptP">
+                                    <span class="colorR">&nbsp;*</span>
+                                    <span class="colorR">&nbsp;错误提示错误提示错误提示</span>
+                                </p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td>
+                              <div class="H10"></div>
+                              <div class="fc div-tab fl">
+                                <a class="B_bg bnt_h22 fl" style=" margin-right:10px" href="javascript:void(0);">连接</a>
+                              </div>
+                            </td>
+                          </tr>
+                        </table>
+                        <!--未连接-end-->
+                        
+                        <!--已连接-->
+                        <table border="0" cellspacing="0" cellpadding="6">
+                          <tr>
+                            <td style=" width:70px;">账号:</td>
+                            <td>
+                                12345678
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>MAC地址:</td>
+                            <td>
+                                b0:90:27:e8:d5:07
+                            </td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td>
+                              <div class="H10"></div>
+                              <div class="fc div-tab fl">
+                              	<span class="colorG fl" style=" margin-right:20px;">(已连接)</span>
+                                <a class="R_bg bnt_h22 fl" href="javascript:void(0);">断开</a>
+                              </div>
+                            </td>
+                            <td></td>
+                          </tr>
+                        </table>
+                        <!--已连接-end-->
+                        <div class="H20"></div>
+                        <table border="0" cellspacing="0" cellpadding="6">
+    
+                          <tr>
+                            <td class="tt" style=" width:70px;">
+                                <p class="inptP">多拨:</p>
+                                
+                            </td>
+                            <td class="switch">
+                                <!--动画开关-->
+                                <label class="fl rounded checkbox-power">
+                                    <div><p class="colorG">开</p><span class="rounded G_bg"></span><p class="colorR">关</p></div>
+                                    <input type="checkbox" checked="checked"  value="colorR" />
+                                 </label>
+                                 <!--动画开关-end-->
+    
+                                <div class="switch-div col">
+                                    <div class="H10"></div>
+                                    <div class="clearfix">
+                                        <div class="H10"></div>
+                                        <p class="fl inptP">拨号:&nbsp;</p>
+                                        <input class="inptText rounded fl" style=" width:60px" type="text" name="">
+                                        <p class="inptP fl">&nbsp; 次</p>
+                                        <a class="B_bg bnt_h22 fl" style=" margin-left:10px;" href="javascript:void(0);">开始拨号</a>
+                                        <span class="colorR inptP fl">&nbsp; 错误提示错误提示错误提示</span>
+                                    </div>
+                                    <div class="H10"></div>
+                                    <div class="clearfix">
+                                        <p class="fl inptP">状态:&nbsp;</p>
+                                        <p class="inptP fl">成功3次</p>
+                                    </div>
+                                    <div class="H20 col"></div>
+                                    <table class="table-every flow-table rounded" style="" border="0" cellspacing="0" cellpadding="0">
+                                        <tr>
+                                            
+                                            <th width="10%">
+                                                拨号名称
+                                            </th>
+                                            <th width="15%">
+                                               IP
+                                            </th>
+                                            <th width="15%">
+                                               网关
+                                            </th>
+                                            <th width="15%">
+                                                DNS1
+                                            </th>
+                                            <th width="15%">
+                                                DNS2
+                                            </th>
+                                            <th width="15%">
+                                                上线时间
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                adsl1
+                                            </td>
+                                            <td>
+                                                192.168.88.888
+                                            </td>
+                                            <td>
+                                            	192.168.88.888
+                                            </td>
+                                            <td>
+                                            	114.114.114.114
+                                            </td>
+                                            <td >
+                                            	114.114.114.114
+                                            </td>
+                                            <td >
+                                            	12-05&nbsp;17:52
+                                            </td>
+                                        </tr>
+                                    </table>
+                					<div class="H20"></div>
+                                    <span class="notes">
+                                    	1请咨询当地运营商是否支持多拨及多拨次数，多拨成功后，自动启用负载均衡，宽带是否叠加，请咨询运营商账号是共享还是独享
+										<br />2多拨成功后进行流控设置时，请测试实际带宽
+                                    </span>
+                                </div>
+                            </td>
+                          </tr>
+                        </table>
+                    </li>
+                    <!--PPPOE-end-->
+                    
+                    <!--DHCP-->
+                    <li style=" height:300px;">
+                        <h4 >系统检测使用DHCP方式</h4>
+                        <table border="0" cellspacing="0" cellpadding="6">
+                          <tr>
+                            <td>连接类型:</td>
+                            <td>DHCP</td>
+                          </tr>
+                          <tr>
+                            <td>IP地址:</td>
+                            <td>192.168.0.199</td>
+                          </tr>
+                          <tr>
+                            <td>子网掩码:</td>
+                            <td>255.255.254.0</td>
+                          </tr>
+                          <tr>
+                            <td>默认网关:</td>
+                            <td>192.168.1.253</td>
+                          </tr>
+                          <tr>
+                            <td>DNS:</td>
+                            <td>114.114.114.114 202.106.195.68</td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td>
+                              <div class="H10"></div>
+                              <div class="fc div-tab fl">
+                                <a class="B_bg bnt_h22 fl" style=" margin-right:10px" href="javascript:void(0);">确定</a>
+                              </div>
+                            </td>
+                          </tr>
+                        </table>
+                    </li>
+                    <!--DHCP-end-->
+                    
+                    <!--静态IP-->
+                    <li style=" height:300px;">
+                        <table border="0" cellspacing="0" cellpadding="6">
+                          <tr>
+                            <td>IP地址:</td>
+                            <td>
+                                <input class="inptText rounded fl" type="text" name="">
+								<p class="fl inptP">
+                                    <span class="colorR">&nbsp;*</span>
+                                    <span class="colorR">&nbsp;错误提示错误提示错误提示</span>
+                                </p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>子网掩码:</td>
+                            <td>
+                                <input class="inptText rounded fl" type="text" name="">
+								<p class="fl inptP">
+                                    <span class="colorR">&nbsp;*</span>
+                                    <span class="colorR">&nbsp;错误提示错误提示错误提示</span>
+                                </p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>网关:</td>
+                            <td>
+                                <input class="inptText rounded fl" type="text" name="">
+                                <p class="fl inptP">
+                                    <span class="colorR">&nbsp;*</span>
+                                    <span class="colorR">&nbsp;错误提示错误提示错误提示</span>
+                                </p>
+                            </td>
+
+                          </tr>
+                          <tr>
+                            <td>DNS1:</td>
+                            <td>
+                                <input class="inptText rounded fl" type="text" name="">
+                                <p class="fl inptP">
+                                    <span class="colorR">&nbsp;*</span>
+                                    <span class="colorR">&nbsp;错误提示错误提示错误提示</span>
+                                </p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>DNS2:</td>
+                            <td>
+                                <input class="inptText rounded fl" type="text" name="">
+                                <p class="fl inptP">
+                                    <span class="colorR">&nbsp;错误提示错误提示错误提示</span>
+                                </p>
+                            </td>
+                          </tr>
+      
+                          <tr>
+                            <td>MAC地址:</td>
+                            <td>
+                                <input class="inptText rounded fl" type="text" name="">
+                                <a class="B_bg bnt_h22 fl" style=" margin-left:10px; margin-right:10px;" href="javascript:void(0);">MAC地址克隆</a>
+                                <p class="fl inptP">
+                                    <span class="colorR">&nbsp;错误提示错误提示错误提示</span>
+                                </p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td>
+                              <div class="H10"></div>
+                              <div class="fc div-tab fl">
+                                <a class="B_bg bnt_h22 fl" style=" margin-right:10px" href="javascript:void(0);">连接</a>
+                              </div>
+                            </td>
+                          </tr>
+
+                        </table>
+                    </li>
+                    <!--静态IP-end-->
+                 </ul>
+  
+                
+                <div class="H40"></div>
+                
+
+        	</div><!--- pdg20-LR end-->
+        </div>

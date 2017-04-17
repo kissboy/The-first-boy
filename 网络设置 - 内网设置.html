@@ -1,0 +1,332 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>网络设置 - 内网设置</title>
+</head>
+
+<link rel="stylesheet" type="text/css" href="css/my.css"/>
+
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+
+<script type="text/javascript" src="js/jqModal.js"></script><!--悬框插件-->
+<script type="text/javascript" src="js/highcharts.js"></script><!--highcharts-->
+<script type="text/javascript" src="js/exporting.js"></script><!--highcharts-饼图-->
+
+<script type="text/javascript" src="js/my.js"></script>
+
+<body>
+
+<!--头部-->
+<div class="back_header">
+    <div class="back_logo"></div>
+
+    <div class="back_usrbar">
+        <a href="javascript:void(0);" ><img src="images/admin_Picture.png" /></a>
+        <a href="javascript:void(0);" >admin</a>
+        <a href="javascript:void(0);" >退出</a>
+    </div>
+</div><!--头部-end-->
+
+
+<!--左侧-->
+<div class="back_left">
+
+    <ul class="sidebar_nav">
+        <li>
+            <span class="on"><samp class="samp_nav00"></samp>首页</span>
+            <ul></ul>
+        </li>
+
+        <li>
+            <span><samp class="samp_nav01"></samp>网络状态</span>
+            <ul>
+                <dl class="H5 fl"><!--空间占位--></dl>
+                <li class="current"><a href="javascript:void(0);" >系统监控</a></li>
+                <li><a href="javascript:void(0);" >内网监控</a></li>
+                <li><a href="javascript:void(0);" >策略监控</a></li>
+                <li><!--空间占位--></li>
+            </ul>
+        </li>
+
+        <li>
+            <span><samp class="samp_nav02"></samp>网络设置</span>
+            <ul>
+                <dl class="H5 fl"><!--空间占位--></dl>
+                <li><a href="javascript:void(0);" >上网设置</a></li>
+                <li><a href="javascript:void(0);" >局域网设置</a></li>
+                <li><a href="javascript:void(0);" >Wi-Fi&nbsp;设置</a></li>
+                <li><!--空间占位--></li>
+            </ul>
+        </li>
+
+
+        <li>
+            <span><samp class="samp_nav05"></samp>AC管理</span>
+            <ul>
+                <dl class="H5 fl"><!--空间占位--></dl>
+                <li><a href="javascript:void(0);" >设置</a></li>
+                <li><a href="javascript:void(0);" >用户</a></li>
+                <li><a href="javascript:void(0);" >升级</a></li>
+                <li><!--空间占位--></li>
+            </ul>
+        </li>
+
+        <li>
+            <span><samp class="samp_nav04"></samp>认证设置</span>
+            <ul>
+                <dl class="H5 fl"><!--空间占位--></dl>
+                <li><a href="javascript:void(0);" >WEB认证</a></li>
+                <li><a href="javascript:void(0);" >服务账号</a></li>
+                <li><!--空间占位--></li>
+            </ul>
+        </li>
+
+
+        <li>
+            <span><samp class="samp_nav03"></samp>流控设置</span>
+            <ul>
+                <dl class="H5 fl"><!--空间占位--></dl>
+                <li><a href="javascript:void(0);" >一键流控</a></li>
+                <li><a href="javascript:void(0);" >手工流控</a></li>
+                <li><!--空间占位--></li>
+            </ul>
+        </li>
+
+        <li>
+            <span><samp class="samp_nav08"></samp>服务中心</span>
+            <ul>
+                <dl class="H5 fl"><!--空间占位--></dl>
+                <li><a href="javascript:void(0);" >动态域名</a></li>
+                <li><a href="javascript:void(0);" >端口映射</a></li>
+                <li><a href="javascript:void(0);" >UPnP设置</a></li>
+                <li><a href="javascript:void(0);" >ARP绑定</a></li>
+                <li><a href="javascript:void(0);" >VPN服务</a></li>
+                <li><!--空间占位--></li>
+            </ul>
+        </li>
+
+
+
+        <li>
+            <span><samp class="samp_nav06"></samp>安全设置</span>
+            <ul>
+                <dl class="H5 fl"><!--空间占位--></dl>
+                <li><a href="javascript:void(0);" >分组管理</a></li>
+                <li><a href="javascript:void(0);" >MAC访问控制</a></li>
+                <li><a href="javascript:void(0);" >网页访问控制</a></li>
+                <li><a href="javascript:void(0);" >防火墙</a></li>
+                <li><!--空间占位--></li>
+            </ul>
+        </li>
+
+
+        <li>
+            <span><samp class="samp_nav09"></samp>系统工具</span>
+            <ul>
+                <dl class="H5 fl"><!--空间占位--></dl>
+                <li><a href="javascript:void(0);" >Ping测试</a></li>
+                <li><a href="javascript:void(0);" >路由追踪</a></li>
+                <li><a href="javascript:void(0);" >子网换算</a></li>
+                <li><a href="javascript:void(0);" >DHCP检测</a></li>
+                <li><!--空间占位--></li>
+            </ul>
+        </li>
+
+
+        <li>
+            <span><samp class="samp_nav07"></samp>系统设置</span>
+            <ul>
+                <dl class="H5 fl"><!--空间占位--></dl>
+                <li><a href="javascript:void(0);" >远程控制</a></li>
+                <li><a href="javascript:void(0);" >密码修改</a></li>
+                <li><a href="javascript:void(0);" >版本升级</a></li>
+                <li><a href="javascript:void(0);" >恢复出厂设置</a></li>
+                <li><a href="javascript:void(0);" >重新启动</a></li>
+                <li><!--空间占位--></li>
+            </ul>
+        </li>
+
+
+
+
+
+    </ul>
+</div>
+<!--左侧-end-->
+
+
+<!--内容-->
+<div class="right">
+    <div class="right_t">
+        <div class="right_nav">
+            <a href="javascript:void(0);" ><img src="images/back_nav_bg.png" title="返回首页" alt="返回首页"></a>
+            <a href="javascript:void(0);" >首页</a>
+            <span>>></span>
+            <a href="javascript:void(0);" >一级</a>
+            <span>>></span>
+            <a href="javascript:void(0);" >二级</a>
+        </div>
+        <div class="nav_date fr">
+            <p>2015-6-6</p>
+            <p>10:15:36</p>
+            <p>星期日</p>
+        </div>
+    </div><!--back_center_t-end-->
+
+
+    <div class="back_center clearfix">
+
+        <div class="box rounded-box" >
+            <div class="clearfix pdg20-LR">
+                <div class="border-b box-tit">
+                    <h4>上网设置</h4>
+                    <a class="bnt-help" title="帮助"></a>
+                </div>
+
+                <div class="H40"></div>
+                <div class="fl seitchH-radio clearfix ">
+                    <div class="menu">
+                        <label class="radio radio-hidden menu-tit menu-tit-pad50 active">
+                            <input type="radio" name="dc" checked="checked">
+                            lan1
+                        </label>
+                        <label class="radio radio-hidden menu-tit menu-tit-pad50">
+                            <input type="radio" name="dc" >
+                            lan2
+                        </label>
+                        <label class="radio radio-hidden menu-tit menu-tit-pad50">
+                            <input type="radio" name="dc" >
+                            lan3
+                        </label>
+                    </div>
+                </div>
+
+
+                <div class="fl quantitative">
+                    <a class="increase" onclick="showjqm('.check-box' ,true)" title="增加">+</a>
+                </div>
+                <div class="H40 col"></div>
+
+                <script>
+                    $(document).ready(function(){
+                        //端口接入方式切换
+                        tab_switch(".modeShifting-key li",".modeShifting-box",".modeShifting");
+                    });
+                </script>
+
+                <!--端口切换-->
+                <ul class="seitchH-ul">
+
+                    <!--端口1-->
+                    <li class="modeShifting clearfix">
+                        <table cellspacing="0" cellpadding="6" border="0">
+                            <tbody><tr>
+                                <td style=" width:120px;">内网接口IP地址:</td>
+                                <td>
+                                    <input class="inptText rounded fl ip_addr" name="" reg="webip" type="text">
+                                    <p class="fl inptP">
+                                        <span class="colorR">&nbsp;*</span>
+                                        <span class="colorR error-tip">&nbsp;</span>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>子网掩码:</td>
+                                <td>
+                                    <div class="selectBox fl">
+                                        <input class="inptText selectInpt rounded netmask" name="" value="" reg="not_allow_empty" readonly="readonly" style="background-position: right 0px;" type="text">
+                                        <ul class="selectUl netmask-select">
+                                            <li>255.255.255.255</li>
+                                            <li>255.255.255.254 </li>
+                                            <li>255.255.255.252</li>
+                                        </ul>
+                                    </div><!--selectBox-->
+                                    <p class="fl inptP">
+                                        <span class="colorR">&nbsp;*</span>
+                                        <span class="colorR error-tip">&nbsp;</span>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>克隆MAC:</td>
+                                <td>
+                                    <input class="inptText rounded fl mac" name="" reg="webmac" regopt="allow_empty" type="text">
+                                    <!--<a class="B_bg bnt_h22 fl" style=" margin-left:10px; margin-right:10px;" href="javascript:void(0);">MAC地址克隆</a>-->
+                                    <p class="fl inptP">
+                                        <span>选填</span>
+                                        <span class="colorR error-tip"></span>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <div class="H20"></div>
+                                    <a class="B_bg bnt_h35 fl save" style="margin-right:10px;width:100px;" href="javascript:void(0);">确定</a>
+
+                                </td>
+                            </tr>
+                            </tbody></table>
+
+                    </li>
+                    <!--端口1-end-->
+
+                    <!--端口2-->
+                    <li class="modeShifting clearfix">
+                        端口2
+                    </li>
+                    <!--端口2-end-->
+
+                    <!--端口3-->
+                    <li class="modeShifting clearfix">
+                        端口3
+                    </li>
+                    <!--端口3-end-->
+
+
+                </ul>
+
+
+                <div class="H40"></div>
+
+
+            </div><!--- pdg20-LR end-->
+        </div><!--rounded-box-->
+
+    </div><!--back_center--end-->
+</div><!--内容-end-->
+
+<!-- 确认 onclick="showjqm('.check-box' ,false)" -->
+<div class="jqmWindow rounded-box showdiv300 check-box">
+    <div class="jqmWindowTit">
+        <p class="fl">确认</p>
+        <a class="jqmWindowClose jqmClose fr" title="关闭"></a>
+    </div>
+    <div class="jqmWindow_box" style=" overflow:hidden;">
+        <table style=" width:80%; margin:20px auto;" border="0" cellspacing="0" cellpadding="6">
+            <tr>
+                <td class="tc">
+                    <div class="H20"></div>
+                    <span class="plaint-img"></span>
+                    <span>&nbsp;是否确认</span>
+                    <div class="H20"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="fc div-tab">
+                        <input class="but_h30 gray_bg rounded fr jqmClose" style=" margin-left:10px;" type="button" value="取消">
+                        <input class="but_h30 G_bg rounded fr" type="button" value="确定">
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+<!-- 确认 END -->
+
+
+</body>
+</html>
+

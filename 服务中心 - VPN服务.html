@@ -1,0 +1,1045 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>服务中心 - VPN服务</title>
+</head>
+<link rel="stylesheet" type="text/css" src="js/My97DatePicker/skin/WdatePicker.css"/>
+<link rel="stylesheet" type="text/css" href="css/my.css"/>
+
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+
+<script type="text/javascript" src="js/jqModal.js"></script><!--悬框插件-->
+<script type="text/javascript" src="js/highcharts.js"></script><!--highcharts-->
+<script type="text/javascript" src="js/exporting.js"></script><!--highcharts-饼图-->
+
+<script type="text/javascript" src="js/my.js"></script>
+<script type="text/javascript" src="js/My97DatePicker/WdatePicker.js"></script>
+
+<body>
+
+<!--头部-->
+<div class="back_header">
+	<div class="back_logo"></div>
+
+    <div class="back_usrbar">
+    	<a href="javascript:void(0);" ><img src="images/admin_Picture.png" /></a>
+        <a href="javascript:void(0);" >admin</a>
+        <a href="javascript:void(0);" >退出</a>
+    </div>
+</div><!--头部-end-->
+
+
+<!--左侧-->
+<div class="back_left">
+
+    <ul class="sidebar_nav">
+    	<li>
+           <span class="on"><samp class="samp_nav00"></samp>首页</span>
+           <ul></ul>
+        </li>
+        
+        <li>
+           <span><samp class="samp_nav01"></samp>网络状态</span>
+           <ul>
+           		<dl class="H5 fl"><!--空间占位--></dl>
+                <li class="current"><a href="javascript:void(0);" >系统监控</a></li>
+                <li><a href="javascript:void(0);" >内网监控</a></li>
+                <li><a href="javascript:void(0);" >策略监控</a></li>
+                <li><!--空间占位--></li>
+           </ul>
+        </li>
+        
+        <li>
+           <span><samp class="samp_nav02"></samp>网络设置</span>
+           <ul>
+           		<dl class="H5 fl"><!--空间占位--></dl>
+                <li><a href="javascript:void(0);" >上网设置</a></li>
+                <li><a href="javascript:void(0);" >局域网设置</a></li>
+                <li><a href="javascript:void(0);" >Wi-Fi&nbsp;设置</a></li>
+                <li><!--空间占位--></li>
+           </ul>
+        </li>
+        
+        
+         <li>
+           <span><samp class="samp_nav05"></samp>AC管理</span>
+           <ul>
+           		<dl class="H5 fl"><!--空间占位--></dl>
+                <li><a href="javascript:void(0);" >设置</a></li>
+                <li><a href="javascript:void(0);" >用户</a></li>
+                <li><a href="javascript:void(0);" >升级</a></li>
+                <li><!--空间占位--></li>
+           </ul>
+        </li>
+        
+        <li>
+           <span><samp class="samp_nav04"></samp>认证设置</span>
+           <ul>
+           		<dl class="H5 fl"><!--空间占位--></dl>
+                <li><a href="javascript:void(0);" >WEB认证</a></li>
+                <li><a href="javascript:void(0);" >服务账号</a></li>
+                <li><!--空间占位--></li>
+           </ul>
+        </li>
+        
+        
+        <li>
+           <span><samp class="samp_nav03"></samp>流控设置</span>
+           <ul>
+           		<dl class="H5 fl"><!--空间占位--></dl>
+                <li><a href="javascript:void(0);" >一键流控</a></li>
+                <li><a href="javascript:void(0);" >手工流控</a></li>
+                <li><!--空间占位--></li>
+           </ul>
+        </li>
+        
+        <li>
+           <span><samp class="samp_nav08"></samp>服务中心</span>
+           <ul>
+           		<dl class="H5 fl"><!--空间占位--></dl>
+                <li><a href="javascript:void(0);" >动态域名</a></li>
+                <li><a href="javascript:void(0);" >端口映射</a></li>
+                <li><a href="javascript:void(0);" >UPnP设置</a></li>
+                <li><a href="javascript:void(0);" >ARP绑定</a></li>
+                <li><a href="javascript:void(0);" >VPN服务</a></li>
+                <li><!--空间占位--></li>
+           </ul>
+        </li>
+        
+       
+        
+        <li>
+           <span><samp class="samp_nav06"></samp>安全设置</span>
+           <ul>
+           		<dl class="H5 fl"><!--空间占位--></dl>
+                <li><a href="javascript:void(0);" >分组管理</a></li>
+                <li><a href="javascript:void(0);" >MAC访问控制</a></li>
+                <li><a href="javascript:void(0);" >网页访问控制</a></li>
+                <li><a href="javascript:void(0);" >防火墙</a></li>
+                <li><!--空间占位--></li>
+           </ul>
+        </li>
+        
+        
+        <li>
+           <span><samp class="samp_nav09"></samp>系统工具</span>
+           <ul>
+           		<dl class="H5 fl"><!--空间占位--></dl>
+                <li><a href="javascript:void(0);" >Ping测试</a></li>
+                <li><a href="javascript:void(0);" >路由追踪</a></li>
+                <li><a href="javascript:void(0);" >子网换算</a></li>
+                <li><a href="javascript:void(0);" >DHCP检测</a></li>
+                <li><!--空间占位--></li>
+           </ul>
+        </li>
+        
+        
+        <li>
+           <span><samp class="samp_nav07"></samp>系统设置</span>
+           <ul>
+           		<dl class="H5 fl"><!--空间占位--></dl>
+                <li><a href="javascript:void(0);" >设置向导</a></li>
+                <li><a href="javascript:void(0);" >远程控制</a></li>
+                <li><a href="javascript:void(0);" >密码修改</a></li>
+                <li><a href="javascript:void(0);" >版本升级</a></li>
+                <li><a href="javascript:void(0);" >恢复出厂设置</a></li>
+                <li><a href="javascript:void(0);" >重新启动</a></li>
+                <li><!--空间占位--></li>
+           </ul>
+        </li>
+        
+        
+        
+        
+
+    </ul>
+</div>
+<!--左侧-end-->
+
+<!--内容-->
+<div class="right">
+	<div class="right_t">
+    	<div class="right_nav">
+            <a href="javascript:void(0);" ><img src="images/back_nav_bg.png" title="返回首页" alt="返回首页"></a>
+            <a href="javascript:void(0);" >首页</a>
+            <span>>></span>
+            <a href="javascript:void(0);" >一级</a>
+            <span>>></span>
+            <a href="javascript:void(0);" >二级</a>
+        </div>
+        <div class="nav_date fr">
+        	<p>2015-6-6</p>
+            <p>10:15:36</p>
+            <p>星期日</p>
+        </div>
+	</div><!--back_center_t-end-->
+
+
+    <div class="back_center clearfix">
+    
+        <div class="box rounded-box" >
+			<div class="clearfix pdg20-LR ">
+            	
+                <div class="border-b box-tit clearfix">
+                    <h4 class="fl">VPN服务</h4>
+                    <div class="borde-help">
+                        <a class="bnt-help" title="帮助"></a>
+                        <div class="borde-prompt" style="z-index: 100; display: none;">
+                            <span class="vtipGL"></span>
+                            <div class="rounded-box borde-txt">
+                                <p class="msg">暂无帮助信息</p>
+                                <p class="tr"><br><a target="_blank" class="more-help-info" href="http://www.ikuai8.com/support_article.php?id=0000000499" style=" color:#FFF; text-decoration: underline;">点击获取更多帮助</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+                <div class="H10 col"></div>
+                <div class="fc seitchHF-radio fl">
+                    <div class="H20"></div>
+                    <div class="menu">
+                        <label class="radio radio-hidden menu-tit menu-tit-pad50 active" style="">
+                            <input name="mr_dc" checked="checked" type="radio">
+                            PPTP客户端
+                        </label>
+                        <label class="radio radio-hidden menu-tit menu-tit-pad50" style=" border-left:1px solid #0088cc;">
+                            <input name="mr_dc" type="radio">
+                            L2TP客户端
+                        </label>
+                        <label class="radio radio-hidden menu-tit menu-tit-pad50" style=" border-left:1px solid #0088cc;">
+                            <input name="mr_dc" type="radio">
+                            IPSec VPN
+                        </label>
+                        <label class="radio radio-hidden menu-tit menu-tit-pad50" style=" border-left:1px solid #0088cc;">
+                            <input name="mr_dc" type="radio">
+                            OpenVPN客户端
+                        </label>
+                    </div>
+                    <div class="H20 col"></div>
+                </div>
+
+                <!--网页访问控制-->
+                <div class="seitchHF-div col">
+                    <div class="table-every-top clearfix">
+                        <a class="but_h26 R_bg rounded fr del-bulk" style="margin-left:10px;" href="javascript:void(0);" onclick="showjqm('.check-box' ,true)">删除</a>
+                        <a class="but_h26 B_bg rounded fr disable-bulk" style="margin-left:10px;" href="javascript:void(0);" >停用</a>
+                        <a class="but_h26 B_bg rounded fr enable-bulk" style="margin-left:10px;" href="javascript:void(0);" >启用</a>
+
+                        <a class="but_h26 G_bg rounded fr add add_static" style="margin-left:10px;" href="javascript:void(0);">添加</a>
+
+                    </div>
+
+                    <table class="table-every flow-table rounded" style="" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+
+                            <th width="5%">编号</th>
+                            <th width="7%">拨号名称</th>
+                            <th width="13%">服务器IP地址/域名</th>
+                            <th width="8%">用户名</th>
+                            <th width="12%">密码</th>
+                            <th width="10%">线路</th>
+                            <th width="10%">本地IP</th>
+                            <th width="7%">上行(KB/s)</th>
+                            <th width="7%">下行(KB/s)</th>
+                            <th width="8%">状态</th>
+                            <th width="8%">操作</th>
+                            <th width="5%"><input class="chk_all"  type="checkbox"></th>
+                        </tr>
+                        <tr class="item-show">
+                            <td>1</td>
+                            <td>pptp</td>
+                            <td>xxx.x.x.x</td>
+                            <td>user</td>
+                            <td>******</td>
+                            <td>wan3</td>
+                            <td>xxx.x.x.x</td>
+                            <td>xx</td>
+                            <td>xx</td>
+                            <td><p class="colorG">已启用</p></td>
+                            <td>
+                                <a class="table-a del colorR" href="javascript:void(0);" onclick="showjqm('.check-box' ,true)">停用</a>
+                                <a class="table-a click-to-edit" href="javascript:void(0);">编辑</a>
+                                <a class="table-a del colorR" href="javascript:void(0);">删除</a>
+                            </td>
+                            <td>
+                                <input name="chk_list" value="" type="checkbox">
+                            </td>
+                        </tr>
+                        <tr class="item-edit">
+                            <td>new</td>
+                            <td>
+                                <input style="margin-left:5px; width:90%;" class="inptText rounded" type="text"/>
+                            </td>
+                            <td>
+                                <input style="margin-left:5px; width:90%;" class="inptText rounded" tip="输入格式不正确" type="text"/>
+                            </td>
+                            <td>
+                                <input style="margin-left:5px; width:90%;" class="inptText rounded" type="text" />
+                            </td>
+                            <td><input style="margin-left:5px; width:90%;" class="inptText rounded inptText-Error" tip="输入格式不正确，不能输入特殊字符且不能为空" type="text"></td>
+                            <td>
+                                <div class="selectBox">
+                                    <input class="inptText selectInpt rounded netmask" readonly="readonly" name="netmask" value="自动" style="background-position: right 0px;" type="text">
+                                    <ul class="selectUl">
+                                        <li>wan1</li>
+                                        <li>wan2</li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td>
+                                <input style="margin-left:5px; width:90%;" class="inptText rounded" type="text" readonly="readonly" />
+                            </td>
+                            <td>
+                                <input style="margin-left:5px; width:90%;" class="inptText rounded" type="text" />
+                            </td>
+                            <td>
+                                <input style="margin-left:5px; width:90%;" class="inptText rounded" type="text" />
+                            </td>
+                            <td><p class="colorG">已启用</p></td>
+                            <td>
+                                <a class="table-a" href="javascript:void(0);" >确定</a>
+                                <a class="table-a del colorR click-to-cancel" href="javascript:void(0);">取消</a>
+                            </td>
+                            <td>
+                                <input name="chk_list" value="" type="checkbox">
+                            </td>
+                        </tr>
+                    </table>
+                    <!--网页访问控制-->
+
+                    <div class="H20"></div>
+
+                    <div class="fc div-tab">
+                    <!--翻页条-->
+                    <div class="page_div clearfix">
+                            <p>每页</p>
+                            <input name="" style=" " type="text" value="" />
+                            <p>条</p>
+                            <p style=" margin-right:10px;">共64条</p>
+
+                            <a class="firstpage"></a>
+                            <a class="fpage_l"></a>
+                            <a>1</a>
+                            <a class="cur">2</a>
+                            <a>3</a>
+                            <p class="p-cur">...</p>
+                            <a>10</a>
+                            <a>11</a>
+                            <a>1002</a>
+                            <a class="fpage_r"></a>
+                            <a class="lastpage"></a>
+
+                            <input name="" class="page_ipt" style=" width:40px; margin-right:0; margin-left:10px;" type="text" value="" />
+                            <p style="margin:0;">/&nbsp;7页</p>
+                            <input class="btn B_bg" type="button" style=" " value="跳转"  />
+                    </div>
+                    <!--翻页条-end-->
+                    </div>
+
+
+                    <div class="H40"></div>
+                </div>
+                <div class="seitchHF-div col">
+                    <div class="table-every-top clearfix">
+                        <a class="but_h26 R_bg rounded fr del-bulk" style="margin-left:10px;" href="javascript:void(0);" onclick="showjqm('.check-box' ,true)">删除</a>
+                        <a class="but_h26 B_bg rounded fr disable-bulk" style="margin-left:10px;" href="javascript:void(0);" >停用</a>
+                        <a class="but_h26 B_bg rounded fr enable-bulk" style="margin-left:10px;" href="javascript:void(0);" >启用</a>
+                        <a class="but_h26 G_bg rounded fr add add_static" style="margin-left:10px;" href="javascript:void(0);">添加</a>
+                    </div>
+
+                    <table class="table-every flow-table rounded" style="" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+
+                            <th width="5%">编号</th>
+                            <th width="7%">拨号名称</th>
+                            <th width="13%">服务器IP地址/域名</th>
+                            <th width="8%">用户名</th>
+                            <th width="12%">密码</th>
+                            <th width="10%">线路</th>
+                            <th width="10%">本地IP</th>
+                            <th width="7%">上行(KB/s)</th>
+                            <th width="7%">下行(KB/s)</th>
+                            <th width="8%">状态</th>
+                            <th width="8%">操作</th>
+                            <th width="5%"><input class="chk_all"  type="checkbox"></th>
+                        </tr>
+                        <tr class="item-show">
+                            <td>1</td>
+                            <td>pptp</td>
+                            <td>6ivpn.webok.net</td>
+                            <td>user</td>
+                            <td>******</td>
+                            <td>wan3</td>
+                            <td>xxx.x.x.x</td>
+                            <td>xx</td>
+                            <td>xx</td>
+                            <td><p class="colorG">已启用</p></td>
+                            <td>
+                                <a class="table-a del colorR" href="javascript:void(0);" onclick="showjqm('.check-box' ,true)">停用</a>
+                                <a class="table-a click-to-edit" href="javascript:void(0);">编辑</a>
+                                <a class="table-a del colorR" href="javascript:void(0);">删除</a>
+                            </td>
+                            <td>
+                                <input name="chk_list" value="" type="checkbox">
+                            </td>
+                        </tr>
+                        <tr class="item-edit">
+                            <td>new</td>
+                            <td>
+                                <input style="margin-left:5px; width:90%;" class="inptText rounded" type="text"/>
+                            </td>
+                            <td>
+                                <input style="margin-left:5px; width:90%;" class="inptText rounded" tip="输入格式不正确" type="text"/>
+                            </td>
+                            <td>
+                                <input style="margin-left:5px; width:90%;" class="inptText rounded" type="text" />
+                            </td>
+                            <td><input style="margin-left:5px; width:90%;" class="inptText rounded inptText-Error" tip="输入格式不正确，不能输入特殊字符且不能为空" type="text"></td>
+                            <td>
+                                <div class="selectBox">
+                                    <input class="inptText selectInpt rounded netmask" readonly="readonly" name="netmask" value="自动" style="background-position: right 0px;" type="text">
+                                    <ul class="selectUl">
+                                        <li>wan1</li>
+                                        <li>wan2</li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td>
+                                <input style="margin-left:5px; width:90%;" class="inptText rounded" type="text" readonly="readonly" />
+                            </td>
+                            <td>
+                                <input style="margin-left:5px; width:90%;" class="inptText rounded" type="text" />
+                            </td>
+                            <td>
+                                <input style="margin-left:5px; width:90%;" class="inptText rounded" type="text" />
+                            </td>
+                            <td><p class="colorG">已启用</p></td>
+                            <td>
+                                <a class="table-a" href="javascript:void(0);" >确定</a>
+                                <a class="table-a del colorR click-to-cancel" href="javascript:void(0);">取消</a>
+                            </td>
+                            <td>
+                                <input name="chk_list" value="" type="checkbox">
+                            </td>
+                        </tr>
+                    </table>
+
+                </div>
+                <div class="seitchHF-div col">
+                    <div class="table-every-top clearfix">
+                        <a class="but_h26 R_bg rounded fr del-bulk" style="margin-left:10px;" href="javascript:void(0);" onclick="showjqm('.check-box' ,true)">删除</a>
+                        <a class="but_h26 B_bg rounded fr disable-bulk" style="margin-left:10px;" href="javascript:void(0);" >停用</a>
+                        <a class="but_h26 B_bg rounded fr enable-bulk" style="margin-left:10px;" href="javascript:void(0);" >启用</a>
+                        <a class="but_h26 G_bg rounded fr add add_static" style="margin-left:10px;" href="javascript:void(0);">添加</a>
+                        <a class="but_h26 G_bg rounded fr add add_static" style="margin-left:10px;" href="javascript:void(0);"  onclick="showjqm('.log-box' ,false)">显示日志</a>
+                    </div>
+
+                    <table class="table-every flow-table rounded" style="" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+
+                            <th width="5%">编号</th>
+                            <th width="20%">名称</th>
+                            <th width="15%">对方IP/域名</th>
+                            <th width="12%">本地子网</th>
+                            <th width="13%">对方子网</th>
+                            <th width="10%">认证方式</th>
+                            <th width="10%">状态</th>
+                            <th width="10%">操作</th>
+                            <th width="5%"><input class="chk_all"  type="checkbox"></th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>12324</td>
+                            <td>6ivpn.webok.net</td>
+                            <td>192.168.1.0/24</td>
+                            <td>192.168.1.0/24</td>
+                            <td>预共享密钥</td>
+                            <td><p class="colorG">已启用</p></td>
+                            <td>
+                                <a class="table-a del colorR" href="javascript:void(0);" onclick="showjqm('.check-box' ,true)">停用</a>
+                                <a class="table-a click-to-edit" href="javascript:void(0);" onclick="showjqm('.add-ipsec' ,true)">编辑</a>
+                                <a class="table-a del colorR" href="javascript:void(0);">删除</a>
+                            </td>
+                            <td>
+                                <input name="chk_list" value="" type="checkbox">
+                            </td>
+                        </tr>
+                    </table>
+
+                </div>
+                <div class="seitchHF-div col">
+                    <div class="table-every-top clearfix">
+                        <a class="but_h26 R_bg rounded fr del-bulk" style="margin-left:10px;" href="javascript:void(0);" onclick="showjqm('.check-box' ,true)">删除</a>
+                        <a class="but_h26 G_bg rounded fr add add_static" style="margin-left:10px;" href="javascript:void(0);">添加</a>
+                    </div>
+
+                    <table class="table-every flow-table rounded" style="" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+
+                            <th width="5%">编号</th>
+                            <th width="15%">拨号名称</th>
+                            <th width="15%">服务器地址</th>
+                            <th width="10%">服务器端口</th>
+                            <th width="10%">线路</th>
+                            <th width="20%">本地IP</th>
+                            <th width="10%">状态</th>
+                            <th width="10%">操作</th>
+                            <th width="5%"><input class="chk_all"  type="checkbox"></th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>ovpn_01</td>
+                            <td>6ivpn.webok.net</td>
+                            <td>1194</td>
+                            <td>自动</td>
+                            <td>10.7.7.10</td>
+                            <td><p class="colorG">已启用</p></td>
+                            <td>
+                                <a class="table-a del colorR" href="javascript:void(0);" onclick="showjqm('.check-box' ,true)">停用</a>
+                                <a class="table-a click-to-edit" href="javascript:void(0);" onclick="showjqm('.add-openvpn' ,true)">编辑</a>
+                                <a class="table-a del colorR" href="javascript:void(0);">删除</a>
+                                <a class="table-a click-to-edit" href="javascript:void(0);" onclick="showjqm('.log-box' ,false)">日志</a>
+                            </td>
+                            <td>
+                                <input name="chk_list" value="" type="checkbox">
+                            </td>
+                        </tr>
+                    </table>
+
+                </div>
+                <div class="H40"></div>
+        	</div><!--- pdg20-LR end-->
+        </div><!--rounded-box-->
+    
+    </div><!--back_center--end-->
+</div><!--内容-end-->
+
+<!-- 添加ipsec onclick="showjqm('.add-ipsec' ,true)" -->
+<div class="jqmWindow rounded-box showdiv800 add-ipsec">
+    <div class="jqmWindowTit">
+        <p class="fl">添加IPSec VPN</p>
+        <a class="jqmWindowClose jqmClose fr" title="关闭"></a>
+    </div>
+    <div class="jqmWindow_box" style=" overflow:auto; height: 600px; padding: 0 30px 0 50px;">
+        <div class="H30"></div>
+        <table class="fc modeShifting" style=" width:100%;" cellspacing="0" cellpadding="6" border="0">
+            <tr>
+                <td style=" width:120px;">状态:</td>
+                <td>
+                    <input type="checkbox"/>启用
+                </td>
+            </tr>
+            <tr>
+                <td>名称:</td>
+                <td>
+                    <input type="text" value="1234" class="inptText rounded"/>
+                </td>
+            </tr>
+            <tr>
+                <td>对方IP/域名:</td>
+                <td>
+                    <input type="text" class="inptText rounded"/>
+                </td>
+            </tr>
+            <tr>
+                <td>对方子网:</td>
+                <td>
+                    <input type="text" value="192.168.1.0/24" class="inptText rounded"/>
+                    <span class="net_bak">(例如: (例如: 192.168.2.0/24))</span>
+                </td>
+            </tr>
+            <tr>
+                <td>本地子网:</td>
+                <td>
+                    <input type="text" value="192.168.1.0/24" class="inptText rounded"/>
+                    <span class="net_bak">(例如: 192.168.1.0/24 或 0.0.0.0/0)</span>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <a style="display:inline-block; margin-bottom: 15px;" class="but_h26 B_bg rounded add_more">添加更多子网</a>
+                    <div class="add_sec add_ip" id="add_ip">
+                        <!--<div class="but_gl add_ip">-->
+                            <!--<input class="inptText rounded" tip="" type="text">-->
+                            <!--<a href="javascript:void(0);" title="取消" class="del_cal"></a>-->
+                        <!--</div>-->
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>线路:</td>
+                <td>
+                    <div class="selectBox">
+                        <input class="inptText selectInpt rounded netmask" readonly="readonly" name="netmask" value="自动" style="background-position: right 0px;" type="text">
+                        <ul class="selectUl">
+                            <li>自动</li>
+                            <li>wan1</li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>IKE版本:</td>
+                <td>
+                    <div class="selectBox">
+                        <input class="inptText selectInpt rounded netmask" readonly="readonly" name="netmask" value="IKEv1" style="background-position: right 0px;" type="text">
+                        <ul class="selectUl modeShifting-key">
+                            <li>IKEv1</li>
+                            <li>IKEv2</li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+            <tr class="modeShifting-box" style="display: none;">
+                <td>IKE协商模式：</td>
+                <td>
+                    <div class="selectBox fl">
+                        <input class="inptText selectInpt rounded netmask" readonly="readonly" name="netmask" value="IKEv1" style="background-position: right 0px;" type="text">
+                        <ul class="selectUl">
+                            <li>主模式</li>
+                            <li>积极模式</li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+            <tr class="modeShifting-box" style="display: none;">
+                <td colspan="2"></td>
+            </tr>
+            <tr>
+                <td>IKE存活时间：</td>
+                <td>
+                    <input type="text" class="inptText rounded w130"/>
+                    <span class="net_bak">(单位: 小时, 范围: 1~72)</span>
+                </td>
+            </tr>
+            <tr>
+                <td>IKE提议：</td>
+                <td>
+                    <div class="selectBox fl" style="width: 120px;">
+                        <input class="inptText selectInpt rounded netmask" readonly="readonly" name="netmask" value="自动协商" style="background-position: right 0px; width: 120px;" type="text">
+                        <ul class="selectUl" style="width: 120px;">
+                            <li>自动协商</li>
+                            <li>AES128</li>
+                        </ul>
+                    </div>
+                    <div class="selectBox fl" style="width: 120px; margin-left: 20px;">
+                        <input class="inptText selectInpt rounded netmask" readonly="readonly" name="netmask" value="自动协商" style="background-position: right 0px;width: 120px;" type="text">
+                        <ul class="selectUl" style="width: 120px;">
+                            <li>自动协商</li>
+                            <li>MD5</li>
+                        </ul>
+                    </div>
+                    <div class="selectBox fl" style="width: 120px;margin-left: 20px;">
+                        <input class="inptText selectInpt rounded netmask" readonly="readonly" name="netmask" value="MODP768" style="background-position: right 0px;width: 120px;" type="text">
+                        <ul class="selectUl" style="width: 120px;">
+                            <li>MODP768</li>
+                            <li>MODP1024</li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>认证方式：</td>
+                <td>
+                    <div class="selectBox fl">
+                        <input class="inptText selectInpt rounded netmask" readonly="readonly" name="netmask" value="预共享密钥" style="background-position: right 0px;" type="text">
+                        <ul class="selectUl type_dropdown">
+                            <li class="active">预共享密钥</li>
+                            <li>自签证书</li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+            <tr class="type_dropdown_li">
+                <td colspan="2">
+                    <table style=" width:100%;" cellspacing="0" cellpadding="6" border="0">
+                        <tr>
+                            <td style=" width:115px;">预共享密钥：</td>
+                            <td>
+                                <input class="inptText rounded" type="text"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>本地标识：</td>
+                            <td>
+                                <input class="inptText rounded" type="text"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>对方标识：</td>
+                            <td>
+                                <input class="inptText rounded" type="text"/>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr class="type_dropdown_li" style="display: none;">
+                <td colspan="2">
+                    <table style=" width:100%;" cellspacing="0" cellpadding="6" border="0">
+                        <tr>
+                            <td style=" width:115px;">本地标识：</td>
+                            <td>
+                                <input class="inptText rounded" type="text"/>
+                                <a style="display:inline-block; margin-left: 25px;" title="请填写本地标识" class="but_h26 B_bg rounded add_more">生成私钥及证书</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>对方标识：</td>
+                            <td><input class="inptText rounded" type="text"/></td>
+                        </tr>
+                        <tr>
+                            <td>本地私钥：</td>
+                            <td>
+                                <textarea class="inputW210p inptText input_Edit" style="width: 339px; height: 112px;"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>本地证书：</td>
+                            <td>
+                                <textarea class="inputW210p inptText input_Edit" style="width: 339px; height: 112px;"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>对方证书：</td>
+                            <td>
+                                <textarea class="inputW210p inptText input_Edit" style="width: 339px; height: 112px;"></textarea>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>ESP存活时间：</td>
+                <td>
+                    <input type="text" class="inptText rounded w130"/>
+                    <span class="net_bak">(单位: 小时, 范围: 1~24)</span>
+                </td>
+            </tr>
+            <tr>
+                <td>ESP加密算法：</td>
+                <td>
+                    <div class="selectBox">
+                        <input class="inptText selectInpt rounded netmask" readonly="readonly" name="netmask" value="自动协商" style="background-position: right 0px;" type="text">
+                        <ul class="selectUl">
+                            <li>自动协商</li>
+                            <li>AES128</li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>ESP认证算法：</td>
+                <td>
+                    <div class="selectBox">
+                        <input class="inptText selectInpt rounded netmask" readonly="readonly" name="netmask" value="自动协商" style="background-position: right 0px;" type="text">
+                        <ul class="selectUl">
+                            <li>自动协商</li>
+                            <li>MD5</li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>允许压缩：</td>
+                <td><input type="checkbox"/>允许</td>
+            </tr>
+        </table>
+        <div class="H30"></div>
+    </div>
+    <div class="jqmWindowBmt">
+        <div class="H15"></div>
+        <div class="fc div-tab">
+            <input class="but_h30 gray_bg rounded fr jqmClose" style=" margin-left:10px;" type="button" value="取消">
+            <input class="but_h30 G_bg rounded fr" type="button" value="确定">
+        </div>
+        <div class="H15"></div>
+    </div>
+</div>
+<!-- 添加ipsec END -->
+
+<!-- 添加openvpn onclick="showjqm('.add-openvpn' ,true)" -->
+<div class="jqmWindow rounded-box showdiv800 add-openvpn">
+    <div class="jqmWindowTit">
+        <p class="fl">添加IPSec VPN</p>
+        <a class="jqmWindowClose jqmClose fr" title="关闭"></a>
+    </div>
+    <div class="jqmWindow_box" style=" overflow:auto; height: 600px; padding: 0 30px 0 50px;">
+        <div class="H30"></div>
+        <table class="fc add_esc" style=" width:100%;" cellspacing="0" cellpadding="6" border="0">
+            <tr>
+                <td style=" width:120px;">名称：</td>
+                <td>
+                    <input type="text" value="ovpn_01" class="inptText rounded"/>
+                </td>
+            </tr>
+            <tr>
+                <td>服务器地址/域名：</td>
+                <td>
+                    <input type="text"  class="inptText rounded"/>
+                </td>
+            </tr>
+            <tr>
+                <td>服务器端口：</td>
+                <td>
+                    <input type="text" class="inptText rounded"/>
+                </td>
+            </tr>
+            <tr>
+                <td>用户名：</td>
+                <td>
+                    <input type="text" class="inptText rounded"/>
+                </td>
+            </tr>
+            <tr>
+                <td>密码：</td>
+                <td>
+                    <input type="text"  class="inptText rounded"/>
+                </td>
+            </tr>
+            <tr>
+                <td>线路：</td>
+                <td>
+                    <div class="selectBox">
+                        <input class="inptText selectInpt rounded netmask" readonly="readonly" name="netmask" value="自动" style="background-position: right 0px;" type="text">
+                        <ul class="selectUl">
+                            <li>自动</li>
+                            <li>wan1</li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>隧道协议：</td>
+                <td>
+                    <div class="selectBox">
+                        <input class="inptText selectInpt rounded netmask" readonly="readonly" name="netmask" value="UDP" style="background-position: right 0px;" type="text">
+                        <ul class="selectUl">
+                            <li>UDP</li>
+                            <li>TCP</li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>隧道类型：</td>
+                <td>
+                    <div class="selectBox">
+                        <input class="inptText selectInpt rounded " readonly="readonly" name="netmask" value="TUN" style="background-position: right 0px;" type="text">
+                        <ul class="selectUl">
+                            <li>TUN</li>
+                            <li>TAP</li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>加密算法：</td>
+                <td>
+                    <div class="selectBox">
+                        <input class="inptText selectInpt rounded " readonly="readonly" name="netmask" value="BF-CFB" style="background-position: right 0px;" type="text">
+                        <ul class="selectUl">
+                            <li>BF-CFB</li>
+                            <li>DES-CFB</li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>LZO压缩：</td>
+                <td>
+                    <input  checked="checked" type="radio" name="a">开启
+                    &nbsp;&nbsp; <input  value="0" type="radio" name="a">关闭
+                </td>
+            </tr>
+            <tr>
+                <td>MTU：</td>
+                <td><input type="text" class="inptText rounded w130"/></td>
+            </tr>
+            <tr>
+                <td>CA证书：</td>
+                <td>
+                    <textarea class="inputW210p inptText input_Edit" style="width: 339px; height: 112px;"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>客户端证书：</td>
+                <td>
+                    <textarea class="inputW210p inptText input_Edit" style="width: 339px; height: 112px;"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>客户端私钥：</td>
+                <td>
+                    <textarea class="inputW210p inptText input_Edit" style="width: 339px; height: 112px;"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>设为默认网关：</td>
+                <td>
+                    <input  checked="checked" type="radio" name="checks">是
+                    &nbsp;&nbsp; <input  value="0" type="radio" name="checks">否
+                </td>
+            </tr>
+            <tr>
+                <td>服务器路由推送：</td>
+                <td>
+                    <input  checked="checked" type="radio" name="routes">允许
+                    &nbsp;&nbsp; <input  value="0" type="radio" name="routes">禁止
+                </td>
+            </tr>
+            <tr>
+                <td>添加路由：</td>
+                <td>
+                    <a style="display:inline-block; margin-bottom: 15px;" class="but_h26 B_bg rounded add_route">添加</a>
+                    <div class="add_sec add_ip" id="add_route">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>附加配置：</td>
+                <td>
+                    <textarea class="inputW210p inptText input_Edit" style="width: 339px; height: 112px;"></textarea>
+                    <div class="net_bak">
+                        <div>附加配置举例：</div>
+                        <div class="add_example">tcp-queue-limit 32</div>
+                        <div class="add_example">mtu-disc no</div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <div class="H30"></div>
+    </div>
+    <div class="jqmWindowBmt">
+        <div class="H15"></div>
+        <div class="fc div-tab">
+            <input class="but_h30 gray_bg rounded fr jqmClose" style=" margin-left:10px;" type="button" value="取消">
+            <input class="but_h30 G_bg rounded fr" type="button" value="确定" onclick="showjqm('.error-box' ,false)" />
+        </div>
+        <div class="H15"></div>
+    </div>
+</div>
+<!-- 添加openvpn END -->
+
+<!-- 确认 onclick="showjqm('.check-box' ,false)" -->
+<div class="jqmWindow rounded-box showdiv300 check-box">
+    <div class="jqmWindowTit">
+        <p class="fl">提示</p>
+        <a class="jqmWindowClose jqmClose fr" title="关闭"></a>
+    </div>
+    <div class="jqmWindow_box" style=" overflow:hidden;">
+        <table style=" width:80%; margin:20px auto;" border="0" cellspacing="0" cellpadding="6">
+            <tr>
+                <td class="tc">
+                    <div class="H20"></div>
+                    <span class="plaint-img"></span>
+                    <span>&nbsp;是否确认</span>
+                    <div class="H20"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="fc div-tab">
+                        <input class="but_h30 gray_bg rounded fr jqmClose" style=" margin-left:10px;" type="button" value="取消">
+                        <input class="but_h30 G_bg rounded fr" type="button" value="确定">
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+<!-- 确认 END -->
+
+
+<!-- 错误 onclick="showjqm('.error-box' ,false)" -->
+<div class="jqmWindow rounded-box showdiv300 error-box" style="border: 1px solid #ddd;">
+    <div class="jqmWindowTit">
+        <p class="fl">错误</p>
+        <a class="jqmWindowClose jqmClose fr" title="关闭"></a>
+    </div>
+    <div class="jqmWindow_box" style=" overflow:hidden; padding: 30px 0">
+        <div class="error_ca">
+            <span class="error-img"></span>
+            <span>CA证书无效</span>
+        </div>
+    </div>
+    <div class="jqmWindowBmt">
+        <div class="H15"></div>
+        <div class="fc div-tab">
+            <input class="but_h30 G_bg rounded fr jqmClose" type="button" value="确定" />
+        </div>
+        <div class="H15"></div>
+    </div>
+</div>
+<!-- 确认 END -->
+
+
+<!-- 日志 onclick="showjqm('.log-box' ,false)" -->
+<div class="jqmWindow rounded-box showdiv800 log-box" style="border: 1px solid #ddd;">
+    <div class="jqmWindowTit">
+        <p class="fl">日志</p>
+        <a class="jqmWindowClose jqmClose fr" title="关闭"></a>
+    </div>
+    <div class="jqmWindow_box" style=" overflow:hidden; padding: 20px;">
+        <textarea name="log" rows="3" cols="20" class="input_light" disabled="disabled" style="height: 430px;  padding-left:15px; width: 730px; line-height: 1.6; font-family: Tahoma, Arial, Helvetica, sans-serif, 微软雅黑; color: rgb(102, 102, 102); margin: 0px;resize:none;">
+            Wed Feb 15 10:10:45 2017 OpenVPN 2.3.11 i486-openwrt-linux-gnu [SSL (OpenSSL)] [LZO] [EPOLL] [MH] [IPv6] Wed Feb 15 10:10:45 2017 library versions: OpenSSL 1.0.2f  28 Jan 2016, LZO 2.06 Wed Feb 15 10:10:45 2017 WARNING: No server certificate verification method has been enabled.  See http://openvpn.net/howto.html#mitm for more info. Wed Feb 15 10:10:45 2017 NOTE: the current --script-security setting may allow this configuration to call user-defined scripts Wed Feb 15 10:10:45 2017 WARNING: normally if you use --mssfix and/or --fragment, you should also set --tun-mtu 1500 (currently it is 1400) Wed Feb 15 10:10:45 2017 UDPv4 link local: [undef] Wed Feb 15 10:10:45 2017 UDPv4 link remote: [AF_INET]218.255.23.206:1194 Wed Feb 15 10:11:45 2017 TLS Error: TLS key negotiation failed to occur within 60 seconds (check your network connectivity) Wed Feb 15 10:11:45 2017 TLS Error: TLS handshake failed Wed Feb 15 10:11:45 2017 SIGUSR1[soft,tls-error] received, process restarting Wed Feb 15 10:11:47 2017 WARNING: No server certificate verification method has been enabled.  See http://openvpn.net/howto.html#mitm for more info. Wed Feb 15 10:11:47 2017
+        </textarea>
+        <div class="H10"></div>
+    </div>
+
+</div>
+<!-- 确认 END -->
+
+
+
+<script type="text/javascript">
+    $(".click-to-edit").click(function(){
+        $(".item-edit").show();
+        $(".item-show").hide();
+    });
+    $(".click-to-cancel").click(function(){
+        $(".item-edit").hide();
+        $(".item-show").show();
+    });
+
+
+
+    /*添加更多子网*/
+    $(function(){
+
+        $(".add_more").click(function(){
+            var texts = document.getElementById("add_ip");
+            var temp =  '<div class="but_gl add_ip"><input  type="text" class="inptText rounded"/><a href="javascript:void(0);" title="取消" class="del_cal"></a></div>';
+            $("#add_ip").append(temp);
+
+        });
+        $(".del_cal").live("click",function(){
+            $(this).parent("div").remove();
+        });
+
+
+        /*添加更路由*/
+
+        $(".add_route").click(function(){
+            var texts = document.getElementById("add_route");
+            var temp =  '<div class="but_gl add_ip"><input  type="text" class="inptText rounded"/><a href="javascript:void(0);" title="取消" class="del_cal"></a><span>&nbsp&nbsp&nbsp;格式:192.168.1.0/24</span></div>';
+            $("#add_route").append(temp);
+
+        });
+        $(".del_cal").live("click",function(){
+            $(this).parent("div").remove();
+        });
+
+
+        //端口接入方式切换
+        tab_switch(".modeShifting-key li",".modeShifting-box",".modeShifting");
+        tab_switch(".type_dropdown li",".type_dropdown_li",".modeShifting");
+    });
+</script>
+
+</body>
+</html>
+
+

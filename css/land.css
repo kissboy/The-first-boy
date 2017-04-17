@@ -1,0 +1,68 @@
+body {
+    color: #505459;
+    font-family: "微软雅黑",Tahoma,Arial,Helvetica,sans-serif;
+    font-size: 14px;
+	line-height:150%;
+	text-align:left;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+a:focus, 
+input:focus, 
+button:focus, 
+select:focus, 
+textarea:focus { 
+outline:none; 
+}
+
+body, a, p{ margin:0; padding:0;}
+
+#land_bg1{ display:block; position:absolute; height:100%; width:100%; z-index:5;}
+.land_bg{ position:absolute; height:100%; width:100%; z-index:1; min-height:340px; min-width:630px;}
+
+
+.land_man{ display:block; position:absolute; height:100%; width:100%; z-index:2; background:transparent;}
+.land_content{ height:130px; width:610px; _width:613px; position:absolute; z-index:10;}
+.land_logo{ display:block; width:372px; height:80px; margin:0 auto; padding-bottom:30px; background-position:top center; background:url(../images/land-img/land_logo.png) no-repeat; _pie-background:url(../images/land-img/land_logo.png) no-repeat; _behavior: url(css/PIE.htc)}
+
+
+#land_shake{width:100%; position:relative;}
+.land_form input{ border: medium none; float:left; font-size:16px; font-weight:bold; color:#6d6f71; line-height:34px \9; _line-height:34px;  }
+
+.user_div{ display:block; width:177px; height:34px;  padding:10px 20px 10px 50px; float:left; 
+background:url(../images/land-img/user_input.png) no-repeat;_pie-background:url(../images/land-img/user_input.png); _behavior: url(css/PIE.htc)}
+.user_input{display:block; width:177px; height:34px; background-color: transparent; position:relative; z-index:3;}
+
+
+.psod_div{ display:block; width:177px; height:34px; padding:10px 20px 10px 50px; float:left;
+  background:url(../images/land-img/psod_input.png) no-repeat; background-color: transparent; _pie-background:url(../images/land-img/psod_input.png) no-repeat; _behavior: url(css/PIE.htc)}
+.psod_input{display:block; width:177px; height:34px; background-color: transparent; position:relative; z-index:3;}
+
+.land_form .submit_land{ display:block; width:113px; height:54px; float:right; cursor:pointer;  position:relative; z-index:3;
+background:url(../images/land-img/submit_land.png) no-repeat;  _pie-background:url(../images/land-img/submit_land.png) no-repeat; _behavior: url(css/PIE.htc)
+}
+
+
+
+.land_prompt{ height:0px; width:100%; position:relative;}
+.land_prompt_error{height:0px; width:228px; padding:8px 20px 0 30px; position:absolute;  left:171px; ; margin:0 auto;
+background:url(../images/land-img/land_prompt.png) no-repeat;
+
+
+
+top:-50px; 
+opacity: 0;
+filter: 'alpha(opacity=0)';  
+filter: alpha(opacity=0);  
+-moz-opacity:0;   
+-khtml-opacity:0; 
+
+}
+.land_prompt_error img{ float:left; padding-top:3px; padding-right:10px;}
+.land_prompt_error .pTxt{ float:left; height:40px; width:171px; font-size:15px; overflow:hidden;}
+
+.pTxt .txt,.pTxt .bug{display: inline-block;vertical-align: middle;*display:inline;zoom:1;}  
+.pTxt .txt{ line-height:20px;}  
+.pTxt .bug{height: 100%;width: 1px;}

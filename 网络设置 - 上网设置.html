@@ -1,0 +1,966 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>网络设置 - 上网设置</title>
+</head>
+
+<link rel="stylesheet" type="text/css" href="css/my.css"/>
+
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+
+<script type="text/javascript" src="js/jqModal.js"></script><!--悬框插件-->
+<script type="text/javascript" src="js/highcharts.js"></script><!--highcharts-->
+<script type="text/javascript" src="js/exporting.js"></script><!--highcharts-饼图-->
+
+<script type="text/javascript" src="js/my.js"></script>
+
+<body>
+
+<!--头部-->
+<div class="back_header">
+    <div class="back_logo"></div>
+
+    <div class="back_usrbar">
+        <a href="javascript:void(0);" ><img src="images/admin_Picture.png" /></a>
+        <a href="javascript:void(0);" >admin</a>
+        <a href="javascript:void(0);" >退出</a>
+    </div>
+</div><!--头部-end-->
+
+
+<!--左侧-->
+<div class="back_left">
+
+    <ul class="sidebar_nav">
+        <li>
+            <span class="on"><samp class="samp_nav00"></samp>首页</span>
+            <ul></ul>
+        </li>
+
+        <li>
+            <span><samp class="samp_nav01"></samp>网络状态</span>
+            <ul>
+                <dl class="H5 fl"><!--空间占位--></dl>
+                <li class="current"><a href="javascript:void(0);" >系统监控</a></li>
+                <li><a href="javascript:void(0);" >内网监控</a></li>
+                <li><a href="javascript:void(0);" >策略监控</a></li>
+                <li><!--空间占位--></li>
+            </ul>
+        </li>
+
+        <li>
+            <span><samp class="samp_nav02"></samp>网络设置</span>
+            <ul>
+                <dl class="H5 fl"><!--空间占位--></dl>
+                <li><a href="javascript:void(0);" >上网设置</a></li>
+                <li><a href="javascript:void(0);" >局域网设置</a></li>
+                <li><a href="javascript:void(0);" >Wi-Fi&nbsp;设置</a></li>
+                <li><!--空间占位--></li>
+            </ul>
+        </li>
+
+
+        <li>
+            <span><samp class="samp_nav05"></samp>AC管理</span>
+            <ul>
+                <dl class="H5 fl"><!--空间占位--></dl>
+                <li><a href="javascript:void(0);" >设置</a></li>
+                <li><a href="javascript:void(0);" >用户</a></li>
+                <li><a href="javascript:void(0);" >升级</a></li>
+                <li><!--空间占位--></li>
+            </ul>
+        </li>
+
+        <li>
+            <span><samp class="samp_nav04"></samp>认证设置</span>
+            <ul>
+                <dl class="H5 fl"><!--空间占位--></dl>
+                <li><a href="javascript:void(0);" >WEB认证</a></li>
+                <li><a href="javascript:void(0);" >服务账号</a></li>
+                <li><!--空间占位--></li>
+            </ul>
+        </li>
+
+
+        <li>
+            <span><samp class="samp_nav03"></samp>流控设置</span>
+            <ul>
+                <dl class="H5 fl"><!--空间占位--></dl>
+                <li><a href="javascript:void(0);" >一键流控</a></li>
+                <li><a href="javascript:void(0);" >手工流控</a></li>
+                <li><!--空间占位--></li>
+            </ul>
+        </li>
+
+        <li>
+            <span><samp class="samp_nav08"></samp>服务中心</span>
+            <ul>
+                <dl class="H5 fl"><!--空间占位--></dl>
+                <li><a href="javascript:void(0);" >动态域名</a></li>
+                <li><a href="javascript:void(0);" >端口映射</a></li>
+                <li><a href="javascript:void(0);" >UPnP设置</a></li>
+                <li><a href="javascript:void(0);" >ARP绑定</a></li>
+                <li><a href="javascript:void(0);" >VPN服务</a></li>
+                <li><!--空间占位--></li>
+            </ul>
+        </li>
+
+
+
+        <li>
+            <span><samp class="samp_nav06"></samp>安全设置</span>
+            <ul>
+                <dl class="H5 fl"><!--空间占位--></dl>
+                <li><a href="javascript:void(0);" >分组管理</a></li>
+                <li><a href="javascript:void(0);" >MAC访问控制</a></li>
+                <li><a href="javascript:void(0);" >网页访问控制</a></li>
+                <li><a href="javascript:void(0);" >防火墙</a></li>
+                <li><!--空间占位--></li>
+            </ul>
+        </li>
+
+
+        <li>
+            <span><samp class="samp_nav09"></samp>系统工具</span>
+            <ul>
+                <dl class="H5 fl"><!--空间占位--></dl>
+                <li><a href="javascript:void(0);" >Ping测试</a></li>
+                <li><a href="javascript:void(0);" >路由追踪</a></li>
+                <li><a href="javascript:void(0);" >子网换算</a></li>
+                <li><a href="javascript:void(0);" >DHCP检测</a></li>
+                <li><!--空间占位--></li>
+            </ul>
+        </li>
+
+
+        <li>
+            <span><samp class="samp_nav07"></samp>系统设置</span>
+            <ul>
+                <dl class="H5 fl"><!--空间占位--></dl>
+                <li><a href="javascript:void(0);" >远程控制</a></li>
+                <li><a href="javascript:void(0);" >密码修改</a></li>
+                <li><a href="javascript:void(0);" >版本升级</a></li>
+                <li><a href="javascript:void(0);" >恢复出厂设置</a></li>
+                <li><a href="javascript:void(0);" >重新启动</a></li>
+                <li><!--空间占位--></li>
+            </ul>
+        </li>
+
+
+
+
+
+    </ul>
+</div>
+<!--左侧-end-->
+
+
+<!--内容-->
+<div class="right">
+    <div class="right_t">
+        <div class="right_nav">
+            <a href="javascript:void(0);" ><img src="images/back_nav_bg.png" title="返回首页" alt="返回首页"></a>
+            <a href="javascript:void(0);" >首页</a>
+            <span>>></span>
+            <a href="javascript:void(0);" >一级</a>
+            <span>>></span>
+            <a href="javascript:void(0);" >二级</a>
+        </div>
+        <div class="nav_date fr">
+            <p>2015-6-6</p>
+            <p>10:15:36</p>
+            <p>星期日</p>
+        </div>
+    </div><!--back_center_t-end-->
+
+
+    <div class="back_center clearfix">
+
+        <div class="box rounded-box" >
+            <div class="clearfix pdg20-LR">
+                <div class="border-b box-tit">
+                    <h4>上网设置</h4>
+                    <a class="bnt-help" title="帮助"></a>
+                </div>
+
+                <div class="H40"></div>
+                <div class="fl seitchH-radio clearfix ">
+                    <div class="menu">
+                        <label class="radio radio-hidden menu-tit menu-tit-pad50 active">
+                            <input type="radio" name="dc" checked="checked"/>
+                            wan1
+                        </label>
+                        <label class="radio radio-hidden menu-tit menu-tit-pad50">
+                            <input type="radio" name="dc" />
+                            wan2
+                        </label>
+                    </div>
+                </div>
+
+
+                <div class="fl quantitative">
+                    <a class="increase" onclick="showjqm('.check-box' ,true)" title="增加">+</a>
+                    <a class="reduce" onclick="showjqm('.del',true)" title="减少">-</a>
+                </div>
+                <div class="H40 col"></div>
+
+                <script>
+                    $(document).ready(function(){
+                        //端口接入方式切换
+                        tab_switch(".modeShifting-key li",".modeShifting-box",".modeShifting");
+                    });
+                </script>
+
+                <!--端口切换-->
+                <ul class="seitchH-ul" style="">
+
+                    <!--端口1-->
+                    <li class="modeShifting clearfix">
+                        <table cellspacing="0" cellpadding="6" border="0">
+                            <tbody><tr>
+                                <td style=" width:110px;">接入方式:</td>
+                                <td>
+                                    <div class="selectBox fl">
+                                        <input class="inptText selectInpt rounded connectType" readonly="readonly" value="PPPOE" style="background-position: right 0px;" type="text"/>
+                                        <ul class="selectUl modeShifting-key">
+                                            <li data-value="PPPOE" class="active">PPPOE</li>
+                                            <li data-value="DHCP">DHCP</li>
+                                            <li data-value="STATIC">静态IP</li>
+                                        </ul>
+                                    </div><!--selectBox-->
+                                </td>
+                            </tr>
+                            </tbody></table>
+
+                        <dl>
+                            <!--PPPoE-->
+                            <dd class="PPPOE_div modeShifting-box clearfix" style="display: block;">
+
+                                <!--未连接-->
+                                <table class="tab-switch div_not_conn" style="display: table;" cellspacing="0" cellpadding="6" border="0">
+                                    <tbody><tr>
+                                        <td style="width:110px;">账号:</td>
+                                        <td>
+                                            <input class="inptText rounded fl username" name="username" reg="pppoeid" type="text"/>
+                                            <p class="fl inptP">
+                                                <span class="colorR">&nbsp;*</span>
+                                                <span class="colorR error-tip">&nbsp;</span>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>密码:</td>
+                                        <td>
+                                            <input class="inptText rounded fl passwd" name="passwd" reg="pppoepwd" type="text"/>
+                                            <p class="fl inptP">
+                                                <span class="colorR">&nbsp;*</span>
+                                                <span class="colorR error-tip"></span>
+                                            </p>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>DNS:</td>
+                                        <td>
+                                            <div class="selectBox fl">
+                                                <input class="inptText selectInpt rounded auto_dns" readonly="readonly" name="auto_dns" style="background-position: right 0px;" type="text"/>
+                                                <ul class="selectUl select-pppoe-num">
+                                                    <li data-value="1" class="hide">自动获得DNS</li>
+                                                    <li data-value="0" class="show">手动配置DNS</li>
+
+                                                </ul>
+                                            </div><!--selectBox-->
+                                        </td>
+                                    </tr>
+                                    <tr style="display:none" class="dns1">
+                                        <td style="width:105px;">主DNS:</td>
+                                        <td>
+                                            <input class="inptText rounded fl dns1" name="dns1" reg="webip" type="text"/>
+                                            <p class="fl inptP">
+                                                <span class="colorR">&nbsp;*</span>
+                                                <span class="colorR error-tip">&nbsp;</span>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr style="display:none" class="dns2">
+                                        <td style="width:105px;">次DNS:</td>
+                                        <td>
+                                            <input class="inptText rounded fl dns2" name="dns2" reg="webip" type="text"/>
+                                            <p class="fl inptP">
+                                                <span class="colorR">&nbsp;*</span>
+                                                <span class="colorR error-tip">&nbsp;</span>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>多拨次数:</td>
+                                        <td>
+                                            <div class="selectBox fl">
+                                                <input class="inptText selectInpt rounded pppoe_num" readonly="readonly" name="pppoe_num" value="1" style="background-position: right 0px;" type="text"/>
+                                                <ul class="selectUl select-pppoe-num">
+                                                    <li data-value="1">1</li>
+                                                    <li data-value="2">2</li>
+                                                    <li data-value="3">3</li>
+                                                    <li data-value="4">4</li>
+                                                    <li data-value="5">5</li>
+                                                    <li data-value="6">6</li>
+                                                    <li data-value="7">7</li>
+                                                    <li data-value="8">8</li>
+                                                    <li data-value="9">9</li>
+                                                    <li data-value="10">10</li>
+                                                </ul>
+                                            </div><!--selectBox-->
+                                        </td>
+                                    </tr>
+                                    <tr class="_clone_">
+                                        <td>克隆MAC:</td>
+                                        <td>
+                                            <div class="selectBox fl">
+                                                <input class="inptText selectInpt rounded clone-type" readonly="readonly" name="" value="不启用" style="background-position: right 0px;" type="text"/>
+                                                <ul class="selectUl tab-switch-key clone-mac">
+                                                    <li data-value="default" class="active">不启用</li>
+                                                    <li data-value="current">克隆本机MAC</li>
+                                                    <li data-value="custom">手动MAC地址</li>
+                                                </ul>
+                                            </div><!--selectBox-->
+                                        </td>
+                                    </tr>
+                                    <tr class="tab-switch-div _clone_" style="display: none;">
+                                        <td colspan="2"></td>
+                                    </tr>
+                                    <tr class="tab-switch-div _clone_" style="display: none;">
+                                        <td>本机MAC:</td>
+                                        <td class="cur-mac"></td>
+                                    </tr>
+                                    <tr class="tab-switch-div _clone_" style="display: none;">
+                                        <td>手动MAC地址:</td>
+                                        <td>
+                                            <input class="inptText rounded fl custom-mac" name="mac" reg="webmac" type="text"/>
+                                            <p class="fl inptP">
+                                                <span class="colorR">&nbsp;*</span>
+                                                <span class="colorR error-tip"></span>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>服务器名:</td>
+                                        <td>
+                                            <input class="inptText rounded fl passwd" name="pppoe_service" reg="special" type="text"/>
+                                            <p class="fl inptP">
+                                                <span class="colorR">（注：该选择是强制指定服务器拨号，如果没有特殊要求请不要填写）</span>
+                                                <span class="colorR error-tip"></span>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tt">
+                                            <p class="inptP">定时重拨:</p>
+
+                                        </td>
+                                        <td class="switch">
+                                            <!--动画开关-->
+                                            <label class="fl rounded checkbox-power timing_reset">
+                                                <div style="left: -28px;"><p class="colorG">开</p><span class="rounded R_bg"></span><p class="colorR">关</p></div>
+                                                <input value="" type="checkbox"/>
+                                            </label>
+                                            <!--动画开关-end-->
+
+                                            <div class="switch-div col pppoe_net" style="display: none;">
+                                                <div class="H10"></div>
+                                                <table>
+                                                    <tbody><tr>
+                                                        <td class="tt" style=" width:80px;">
+                                                            <p class="inptP">周期:</p>
+                                                        </td>
+                                                        <td>
+                                                            <label class="checkbox fl" style=" margin-right:20px;">
+                                                                <input checked="checked" name="timing_week[]" value="1" type="checkbox"/>
+                                                                星期一
+                                                            </label>
+                                                            <label class="checkbox fl" style=" margin-right:20px;">
+                                                                <input checked="checked" name="timing_week[]" value="2" type="checkbox"/>
+                                                                星期二
+                                                            </label>
+                                                            <label class="checkbox fl" style=" margin-right:20px;">
+                                                                <input checked="checked" name="timing_week[]" value="3" type="checkbox"/>
+                                                                星期三
+                                                            </label>
+                                                            <label class="checkbox fl" style=" margin-right:20px;">
+                                                                <input checked="checked" name="timing_week[]" value="4" type="checkbox"/>
+                                                                星期四
+                                                            </label>
+                                                            <label class="checkbox fl" style=" margin-right:20px;">
+                                                                <input checked="checked" name="timing_week[]" value="5" type="checkbox"/>
+                                                                星期五
+                                                            </label>
+                                                            <label class="checkbox fl" style=" margin-right:20px;">
+                                                                <input checked="checked" name="timing_week[]" value="6" type="checkbox"/>
+                                                                星期六
+                                                            </label>
+                                                            <label class="checkbox fl" style=" margin-right:20px;">
+                                                                <input checked="checked" name="timing_week[]" value="7" type="checkbox"/>
+                                                                星期日
+                                                            </label>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td class="tt">
+                                                            <p class="inptP">生效时间:</p>
+                                                        </td>
+                                                        <td>
+                                                            <input class="inptText rounded fl" style=" width:200px;" name="timing_time" reg="time_time" type="text"/>
+                                                            <p class="fl inptP">
+                                                                <span class="colorR error-tip">&nbsp;</span>
+                                                            </p>
+                                                            <p class="col inptP">
+                                                                <span class="notes">(输入格式如&nbsp;'23:30,11:11,22:22')</span>
+                                                            </p>
+                                                        </td>
+                                                    </tr>
+                                                    </tbody></table>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="tt">
+                                            <p class="inptP">间隔时长重拨:</p>
+
+                                        </td>
+                                        <td class="switch">
+                                            <!--动画开关-->
+                                            <label class="fl rounded checkbox-power cycle_reset">
+                                                <div style="left: -28px;"><p class="colorG">开</p><span class="rounded R_bg"></span><p class="colorR">关</p></div>
+                                                <input value="" type="checkbox"/>
+                                            </label>
+                                            <!--动画开关-end-->
+
+                                            <div class="switch-div col pppoe_cycle" style="display: none;">
+                                                <div class="H10"></div>
+                                                <table>
+                                                    <tbody><tr>
+                                                        <td class="tt" style=" width:80px;">
+                                                            <p class="inptP">间隔时长:</p>
+                                                        </td>
+                                                        <td>
+                                                            <input class="inptText rounded fl" style=" width:100px;" name="cycle_time" reg="num1to10080" type="text"/>分钟
+
+                                                            <p class="fl inptP">
+                                                                <span class="colorR">&nbsp;</span>
+                                                                <span class="colorR error-tip">&nbsp;</span>
+                                                            </p>
+                                                            <span>(拨号成功以后开始计时)</span>
+                                                        </td>
+                                                    </tr>
+                                                    </tbody></table>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    </tbody></table>
+                                <!--未连接-end-->
+
+                                <!--已连接-->
+                                <table class="div_conn" style="display: none;" cellspacing="0" cellpadding="6" border="0">
+                                    <tbody><tr>
+                                        <td style="width:110px;">账号:</td>
+                                        <td>
+                                            <span class="username"></span>
+                                            &nbsp;&nbsp;
+                                            <span class="colorG status-text">(已连接)</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width:105px;">主DNS:</td>
+                                        <td>
+                                            <span class="dns1"></span>
+                                            &nbsp;&nbsp;
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width:105px;">次DNS:</td>
+                                        <td>
+                                            <span class="dns2"></span>
+                                            &nbsp;&nbsp;
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>多拨次数:</td>
+                                        <td>
+                                            <div class="selectBox fl">
+                                                <input class="inptText selectInpt rounded pppoe_num" readonly="readonly" name="pppoe_num" value="1" disabled="disabled" type="text"/>
+                                            </div><!--selectBox-->
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>多拨状态:</td>
+                                        <td>
+                                            成功<span class="succ-times">0</span>次
+                                        </td>
+                                    </tr>
+                                    <tr style="display:none;">
+                                        <td>克隆MAC:</td>
+                                        <td class="mac"></td>
+                                    </tr>
+                                    <tr id="week_checkbox" style="display:none">
+                                        <td class="tt">
+                                            <p class="inptP">定时重拨:</p>
+                                        </td>
+                                        <td class="switch">
+                                            <table>
+                                                <tbody><tr>
+                                                    <td class="tt" style=" width:80px;">
+                                                        <p class="inptP">周期:</p>
+                                                    </td>
+                                                    <td class="week"><label class="checkbox fl" style=" margin-right:20px;"><span>星期一</span></label><label class="checkbox fl" style=" margin-right:20px;"><span>星期二</span></label><label class="checkbox fl" style=" margin-right:20px;"><span>星期三</span></label><label class="checkbox fl" style=" margin-right:20px;"><span>星期四</span></label><label class="checkbox fl" style=" margin-right:20px;"><span>星期五</span></label><label class="checkbox fl" style=" margin-right:20px;"><span>星期六</span></label><label class="checkbox fl" style=" margin-right:20px;"><span>星期日</span></label></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="tt">
+                                                        <p class="inptP">生效时间:</p>
+                                                    </td>
+                                                    <td class="go_time">
+                                                        <span><span>00:00,12:00</span></span>
+                                                    </td>
+                                                </tr>
+                                                </tbody></table>
+                                        </td>
+                                    </tr>
+                                    <tr id="overlap" style="display:none">
+                                        <td class="tt">
+                                            <p class="inptP">间隔时长重拨:</p>
+                                        </td>
+                                        <td class="switch">
+                                            <table>
+                                                <tbody><tr>
+                                                    <td class="tt" style=" width:80px;">
+                                                        <p class="inptP">间隔时长:</p>
+                                                    </td>
+                                                    <td>
+                                                        <span class="num">60</span>分钟
+                                                    </td>
+                                                </tr>
+                                                </tbody></table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>
+                                            <div class="H10"></div>
+                                            <div class="fc div-tab fl">
+
+                                                <a class="B_bg bnt_h35 fl btn-connect" style="margin-right:10px; width:100px;display:none;" href="javascript:void(0);">连接</a>
+                                                <a class="R_bg bnt_h35 fl btn-dis-connect" style="margin-right:10px;  width:100px;" href="javascript:void(0);">断开</a>
+                                            </div>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    </tbody></table>
+                                <!--已连接-end-->
+                                <div class="H5"></div>
+                                <table cellspacing="0" cellpadding="0" border="0">
+                                    <tr>
+                                        <td class="net_left" style=" vertical-align: top; width:130px;">
+                                            多拨助手服务：
+                                        </td>
+                                        <td>
+                                            <div class="switch">
+                                                <!--动画开关-->
+                                                <label class="fl rounded checkbox-power">
+                                                    <div><p class="colorG">开</p><span class="rounded G_bg"></span><p class="colorR">关</p></div>
+                                                    <input type="checkbox"  value="" />
+                                                </label>
+                                                <div class="H40"></div>
+                                                <div class="switch-div" style="display: block;">
+                                                    <div class="more_service">
+                                                        <span class="span_l">并发多拨总数：</span>
+                                                        <input class="inptText rounded w60" type="text"/> 个
+                                                        <div class="net_tips" style="margin: 5px 0 0 135px;">（范围 2-100个,重新修改多拨总数时需要手动停用/启用拨号）</div>
+                                                        <div class="net_tips" style="margin: 0 0 0 138px;">注意:这个总数和你的实际多拨的条数相等,否则效果不佳</div>
+                                                    </div>
+                                                    <div class="more_service">
+                                                        <span class="span_l">异常IP检测：</span>
+                                                        <input type="checkbox" class="error_ip_check"/>开启
+                                                    </div>
+                                                    <div class="more_service err_ip_list" style="display: none;">
+                                                        <span class="span_l">异常IP列表：</span>
+                                                        <input type="text" class="inptText rounded"/>
+                                                        <div class="net_tips" style="margin: 5px 0 0 135px;">(检查有异常的IP头,如"10,172,192.168",检测有异常IP会全部重新拨号)</div>
+                                                    </div>
+                                                    <div class="more_services">
+                                                        <span class="span_l">掉线并发重拨：</span>
+                                                        <input type="checkbox" class="error_ip_checks"/>开启
+                                                    </div>
+                                                    <div class="err_ip_lists" style="display: none;">
+                                                        <div class="more_services">
+                                                            <span class="span_l">掉线禁止重拨：</span>
+                                                            <input type="checkbox" />
+                                                            <span>开启(拨号失败或掉线不自动拨号)</span>
+                                                        </div>
+                                                        <div class="more_service">
+                                                            <span class="span_l">掉线检测周期：</span>
+                                                            <div class="selweek" style="display: inline-block; vertical-align: middle;">
+                                                                <input class="fl" name="selweek" type="checkbox"/>
+                                                                <span class="fl">全部</span>
+                                                                <input class="fl" name="timing_week[]" type="checkbox"/>
+                                                                <span class="fl">周一</span>
+                                                                <input class="fl" name="timing_week[]" type="checkbox"/>
+                                                                <span class="fl">周二</span>
+                                                                <input class="fl" name="timing_week[]" type="checkbox"/>
+                                                                <span class="fl">周三</span>
+                                                                <input class="fl" name="timing_week[]" type="checkbox"/>
+                                                                <span class="fl">周四</span>
+                                                                <input class="fl" name="timing_week[]" type="checkbox"/>
+                                                                <span class="fl">周五</span>
+                                                                <input class="fl" name="timing_week[]" type="checkbox"/>
+                                                                <span class="fl">周六</span>
+                                                                <input class="fl" name="timing_week[]" type="checkbox"/>
+                                                                <span class="fl">周日</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="more_service">
+                                                            <span class="span_l">掉线检测时间：</span>
+                                                            <div style="display: inline-block;">
+                                                                <input class="inptText rounded w60" type="text"/>
+                                                                <input class="inptText rounded w60" type="text"/>
+                                                                <input class="inptText rounded w60" type="text"/>
+                                                                <span class="net_tips" style="margin-left: 5px;">(在指定时间内检测掉线) </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="more_service">
+                                                            <span class="span_l">掉线检测间隔时间：</span>
+                                                            <input class="inptText rounded w60" type="text"/> 分钟
+                                                            <span class="net_tips" style="margin-left: 5px;">（每间隔N分钟会检测掉线数量）</span>
+                                                        </div>
+                                                        <div class="more_service">
+                                                            <span class="span_l">掉线数量：</span>
+                                                            <input class="inptText rounded w60" type="text"/> 分钟
+                                                            <span class="net_tips" style="margin-left: 5px;">（当多拨掉线N个以后自动将所有拨号断开重新拨号）</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="H20"></div>
+                                                <!--动画开关-end-->
+                                            </div>
+
+                                        </td>
+                                    </tr>
+                                </table>
+                                <div class="H20"></div>
+
+
+                            </dd>
+                            <!--PPPoE-end-->
+
+                            <!--PPPoE-->
+                            <dd class="DHCP_div modeShifting-box clearfix" style="display: none;">
+                                <table class="tab-switch" cellspacing="0" cellpadding="6" border="0">
+                                    <tbody><tr>
+                                        <td style="width:110px;">连接类型:</td>
+                                        <td>DHCP</td>
+                                    </tr>
+                                    <tr>
+                                        <td>IP地址:</td>
+                                        <td class="dhcp_ip_addr"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>子网掩码:</td>
+                                        <td class="dhcp_netmask"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>默认网关:</td>
+                                        <td class="dhcp_gateway"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>DNS:</td>
+                                        <td>
+                                            <div class="selectBox fl">
+                                                <input class="inptText selectInpt rounded auto_dns" readonly="readonly" name="auto_dns" type="text"/>
+                                                <ul class="selectUl">
+                                                    <li data-value="1" class="dhcp_hide">自动获得DNS</li>
+                                                    <li data-value="0" class="dhcp_show">手动配置DNS</li>
+
+                                                </ul>
+                                            </div><!--selectBox-->
+                                        </td>
+                                    </tr>
+                                    <tr class="dns1_dhcp_z">
+                                        <td style="width:105px;">主DNS:</td>
+                                        <td>
+                                            <span class="dns1_no"></span>
+                                            &nbsp;&nbsp;
+                                        </td>
+                                    </tr>
+                                    <tr class="dns2_dhcp_z">
+                                        <td style="width:105px;">次DNS:</td>
+                                        <td>
+                                            <span class="dns2_no"></span>
+                                            &nbsp;&nbsp;
+                                        </td>
+                                    </tr>
+                                    <tr style="display:none" class="dns1_dhcp_s">
+                                        <td style="width:105px;">主DNS:</td>
+                                        <td>
+                                            <input class="inptText rounded fl dhcp_dns1" name="dhcp_dns1" reg="webip" type="text"/>
+                                            <p class="fl inptP">
+                                                <span class="colorR">&nbsp;*</span>
+                                                <span class="colorR error-tip">&nbsp;</span>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr style="display:none" class="dns2_dhcp_s">
+                                        <td style="width:105px;">次DNS:</td>
+                                        <td>
+                                            <input class="inptText rounded fl dhcp_dns2" name="dhcp_dns2" reg="" type="text"/>
+                                            <p class="fl inptP">
+                                                <span class="colorR error-tip">&nbsp;</span>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>克隆MAC:</td>
+                                        <td>
+                                            <div class="selectBox fl">
+                                                <input class="inptText selectInpt rounded clone-type" readonly="readonly" name="" value="不启用" type="text"/>
+                                                <ul class="selectUl tab-switch-key clone-mac">
+                                                    <li data-value="default" class="active">不启用</li>
+                                                    <li data-value="current">克隆本机MAC</li>
+                                                    <li data-value="custom">手动MAC地址</li>
+                                                </ul>
+                                            </div><!--selectBox-->
+                                        </td>
+                                    </tr>
+                                    <tr class="tab-switch-div" style="display: none;">
+                                        <td colspan="2"></td>
+                                    </tr>
+                                    <tr class="tab-switch-div" style="display: none;">
+                                        <td>本机MAC:</td>
+                                        <td class="cur-mac"></td>
+                                    </tr>
+                                    <tr class="tab-switch-div" style="display: none;">
+                                        <td>手动MAC地址:</td>
+                                        <td>
+                                            <input class="inptText rounded fl custom-mac" name="mac" reg="webmac" type="text"/>
+                                            <p class="fl inptP">
+                                                <span class="colorR">&nbsp;*</span>
+                                                <span class="colorR error-tip"></span>
+                                            </p>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td></td>
+                                        <td>
+                                            <div class="H10"></div>
+                                            <div class="fc div-tab fl">
+                                                <a class="B_bg bnt_h35 fl wan_save" style=" margin-right:10px;width:100px;" href="javascript:void(0);">确定</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    </tbody></table>
+                                <div class="H40"></div>
+                            </dd>
+                            <!--DHCP-end-->
+
+                            <!--静态IP-->
+                            <dd class="STATIC_div modeShifting-box clearfix" style="display: none;">
+                                <table class="tab-switch" cellspacing="0" cellpadding="6" border="0">
+                                    <tbody><tr>
+                                        <td style="width:110px;">IP地址:</td>
+                                        <td>
+                                            <input class="inptText rounded fl ip_addr" name="ip_addr" reg="webip" type="text"/>
+                                            <p class="fl inptP">
+                                                <span class="colorR">&nbsp;*</span>
+                                                <span class="colorR error-tip">&nbsp;</span>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>子网掩码:</td>
+                                        <td>
+                                            <div class="selectBox fl">
+                                                <input class="inptText selectInpt rounded netmask" readonly="readonly" name="netmask" value="255.255.255.0" style="background-position: right 0px;" type="text"/>
+                                                <ul class="selectUl">
+                                                    <li>255.255.255.255</li>
+                                                    <li>255.255.255.254</li>
+                                                    <li>255.255.255.252</li>
+
+                                                </ul>
+                                            </div><!--selectBox-->
+                                            <p class="fl inptP">
+                                                <span class="colorR">&nbsp;*</span>
+                                                <span class="colorR error-tip">&nbsp;</span>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>网关:</td>
+                                        <td>
+                                            <input class="inptText rounded fl gateway" name="gateway" reg="webip" type="text"/>
+                                            <p class="fl inptP">
+                                                <span class="colorR">&nbsp;*</span>
+                                                <span class="colorR error-tip">&nbsp;</span>
+                                            </p>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>DNS1:</td>
+                                        <td>
+                                            <input class="inptText rounded fl dns1static" name="dns1" reg="webip" type="text"/>
+                                            <p class="fl inptP">
+                                                <span class="colorR">&nbsp;*</span>
+                                                <span class="colorR error-tip">&nbsp;</span>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>DNS2:</td>
+                                        <td>
+                                            <input class="inptText rounded fl dns1static" name="dns2" reg="webip" regopt="allow_empty" type="text"/>
+                                            <p class="fl inptP">
+                                                <span class="colorR error-tip">&nbsp;</span>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>克隆MAC:</td>
+                                        <td>
+                                            <div class="selectBox fl">
+                                                <input class="inptText selectInpt rounded clone-type" readonly="readonly" name="" value="不启用" style="background-position: right 0px;" type="text"/>
+                                                <ul class="selectUl tab-switch-key clone-mac">
+                                                    <li data-value="default" class="active">不启用</li>
+                                                    <li data-value="current">克隆本机MAC</li>
+                                                    <li data-value="custom">手动MAC地址</li>
+                                                </ul>
+                                            </div><!--selectBox-->
+                                        </td>
+                                    </tr>
+                                    <tr class="tab-switch-div" style="display: none;">
+                                        <td colspan="2"></td>
+                                    </tr>
+                                    <tr class="tab-switch-div" style="display: none;">
+                                        <td>本机MAC:</td>
+                                        <td class="cur-mac"></td>
+                                    </tr>
+                                    <tr class="tab-switch-div" style="display: none;">
+                                        <td>手动MAC地址:</td>
+                                        <td>
+                                            <input class="inptText rounded fl custom-mac" name="mac" reg="webmac" type="text"/>
+                                            <p class="fl inptP">
+                                                <span class="colorR">&nbsp;*</span>
+                                                <span class="colorR error-tip"></span>
+                                            </p>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td></td>
+                                        <td>
+                                            <div class="H10"></div>
+                                            <div class="fc div-tab fl">
+                                                <a class="B_bg bnt_h35 fl wan_save" style="margin-right:10px;width:100px;" href="javascript:void(0);">确定</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    </tbody></table>
+
+                            </dd>
+                            <!--静态IP-end-->
+                        </dl>
+
+                    </li>
+                    <!--端口1-end-->
+
+                    <!--端口2-->
+                    <li class="modeShifting clearfix">
+                        wan2的内容
+                    </li>
+                    <!--端口2-end-->
+
+                </ul>
+
+
+                <div class="H40"></div>
+
+
+            </div><!--- pdg20-LR end-->
+        </div><!--rounded-box-->
+
+    </div><!--back_center--end-->
+</div><!--内容-end-->
+
+<!-- 确认 onclick="showjqm('.check-box' ,false)" -->
+<div class="jqmWindow rounded-box showdiv300 check-box">
+    <div class="jqmWindowTit">
+        <p class="fl">确认</p>
+        <a class="jqmWindowClose jqmClose fr" title="关闭"></a>
+    </div>
+    <div class="jqmWindow_box" style=" overflow:hidden;">
+        <table style=" width:80%; margin:20px auto;" border="0" cellspacing="0" cellpadding="6">
+            <tr>
+                <td class="tc">
+                    <div class="H20"></div>
+                    <span class="plaint-img"></span>
+                    <span>&nbsp;是否确认</span>
+                    <div class="H20"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="fc div-tab">
+                        <input class="but_h30 gray_bg rounded fr jqmClose" style=" margin-left:10px;" type="button" value="取消"/>
+                        <input class="but_h30 G_bg rounded fr" type="button" value="确定"/>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+<!-- 确认 END -->
+
+
+</body>
+</html>
+<script type="text/javascript">
+    $(".error_ip_check").click(function(){
+        if($(".error_ip_check").attr('checked')=='checked'){
+            $(this).parent(".more_service").next('.err_ip_list').show();
+        }else{
+            $(this).parent(".more_service").next('.err_ip_list').hide();
+        }
+    });
+
+    $(".error_ip_checks").click(function(){
+        if($(".error_ip_checks").attr('checked')=='checked'){
+            $(this).parent(".more_services").next('.err_ip_lists').show();
+        }else{
+            $(this).parent(".more_services").next('.err_ip_lists').hide();
+        }
+    });
+
+    //周期选择的复选框
+    function weekCheckbox() {
+        var selweek = $('[name="selweek"]');
+        var week = $('[name="timing_week[]"]');
+        selweek.live('click',function(){
+            if ($(this).is(':checked')) {
+                $(this).siblings('[name="timing_week[]"]').prop('checked', true);
+            } else {
+                $(this).siblings('[name="timing_week[]"]').prop('checked', false);
+            }
+        });
+
+        week.live('click',function(){
+            var checked_cnt = $(this).parent('.selweek').find('[name="timing_week[]"]:checked').length;
+            if (checked_cnt == 7) {
+                $(this).siblings('[name="selweek"]').prop('checked', true);
+            } else {
+                $(this).siblings('[name="selweek"]').prop('checked', false);
+            }
+        });
+    }
+    weekCheckbox();
+</script>
+

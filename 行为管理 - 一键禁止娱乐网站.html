@@ -1,0 +1,742 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>行为管理-一键禁止娱乐网站</title>
+</head>
+<link rel="stylesheet" type="text/css" src="js/My97DatePicker/skin/WdatePicker.css"/>
+<link rel="stylesheet" type="text/css" href="css/my.css"/>
+
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+
+<script type="text/javascript" src="js/jqModal.js"></script><!--悬框插件-->
+<script type="text/javascript" src="js/highcharts.js"></script><!--highcharts-->
+<script type="text/javascript" src="js/exporting.js"></script><!--highcharts-饼图-->
+
+<script type="text/javascript" src="js/my.js"></script>
+<script type="text/javascript" src="js/My97DatePicker/WdatePicker.js"></script>
+
+<body>
+
+<!--头部-->
+<div class="back_header">
+	<div class="back_logo"></div>
+
+    <div class="back_usrbar">
+    	<a href="javascript:void(0);" ><img src="images/admin_Picture.png" /></a>
+        <a href="javascript:void(0);" >admin</a>
+        <a href="javascript:void(0);" >退出</a>
+    </div>
+</div><!--头部-end-->
+
+
+<!--左侧-->
+<div class="back_left">
+
+    <ul class="sidebar_nav">
+    	<li>
+           <span class="on"><samp class="samp_nav00"></samp>首页</span>
+           <ul></ul>
+        </li>
+        
+        <li>
+           <span><samp class="samp_nav01"></samp>网络状态</span>
+           <ul>
+           		<dl class="H5 fl"><!--空间占位--></dl>
+                <li class="current"><a href="javascript:void(0);" >系统监控</a></li>
+                <li><a href="javascript:void(0);" >内网监控</a></li>
+                <li><a href="javascript:void(0);" >策略监控</a></li>
+                <li><!--空间占位--></li>
+           </ul>
+        </li>
+        
+        <li>
+           <span><samp class="samp_nav02"></samp>网络设置</span>
+           <ul>
+           		<dl class="H5 fl"><!--空间占位--></dl>
+                <li><a href="javascript:void(0);" >上网设置</a></li>
+                <li><a href="javascript:void(0);" >局域网设置</a></li>
+                <li><a href="javascript:void(0);" >Wi-Fi&nbsp;设置</a></li>
+                <li><!--空间占位--></li>
+           </ul>
+        </li>
+        
+        
+         <li>
+           <span><samp class="samp_nav05"></samp>AC管理</span>
+           <ul>
+           		<dl class="H5 fl"><!--空间占位--></dl>
+                <li><a href="javascript:void(0);" >设置</a></li>
+                <li><a href="javascript:void(0);" >用户</a></li>
+                <li><a href="javascript:void(0);" >升级</a></li>
+                <li><!--空间占位--></li>
+           </ul>
+        </li>
+        
+        <li>
+           <span><samp class="samp_nav04"></samp>认证设置</span>
+           <ul>
+           		<dl class="H5 fl"><!--空间占位--></dl>
+                <li><a href="javascript:void(0);" >WEB认证</a></li>
+                <li><a href="javascript:void(0);" >服务账号</a></li>
+                <li><!--空间占位--></li>
+           </ul>
+        </li>
+        
+        
+        <li>
+           <span><samp class="samp_nav03"></samp>流控设置</span>
+           <ul>
+           		<dl class="H5 fl"><!--空间占位--></dl>
+                <li><a href="javascript:void(0);" >一键流控</a></li>
+                <li><a href="javascript:void(0);" >手工流控</a></li>
+                <li><!--空间占位--></li>
+           </ul>
+        </li>
+        
+        <li>
+           <span><samp class="samp_nav08"></samp>服务中心</span>
+           <ul>
+           		<dl class="H5 fl"><!--空间占位--></dl>
+                <li><a href="javascript:void(0);" >动态域名</a></li>
+                <li><a href="javascript:void(0);" >端口映射</a></li>
+                <li><a href="javascript:void(0);" >UPnP设置</a></li>
+                <li><a href="javascript:void(0);" >ARP绑定</a></li>
+                <li><a href="javascript:void(0);" >VPN服务</a></li>
+                <li><!--空间占位--></li>
+           </ul>
+        </li>
+        
+       
+        
+        <li>
+           <span><samp class="samp_nav06"></samp>安全设置</span>
+           <ul>
+           		<dl class="H5 fl"><!--空间占位--></dl>
+                <li><a href="javascript:void(0);" >分组管理</a></li>
+                <li><a href="javascript:void(0);" >MAC访问控制</a></li>
+                <li><a href="javascript:void(0);" >网页访问控制</a></li>
+                <li><a href="javascript:void(0);" >防火墙</a></li>
+                <li><!--空间占位--></li>
+           </ul>
+        </li>
+        
+        
+        <li>
+           <span><samp class="samp_nav09"></samp>系统工具</span>
+           <ul>
+           		<dl class="H5 fl"><!--空间占位--></dl>
+                <li><a href="javascript:void(0);" >Ping测试</a></li>
+                <li><a href="javascript:void(0);" >路由追踪</a></li>
+                <li><a href="javascript:void(0);" >子网换算</a></li>
+                <li><a href="javascript:void(0);" >DHCP检测</a></li>
+                <li><!--空间占位--></li>
+           </ul>
+        </li>
+        
+        
+        <li>
+           <span><samp class="samp_nav07"></samp>系统设置</span>
+           <ul>
+           		<dl class="H5 fl"><!--空间占位--></dl>
+                <li><a href="javascript:void(0);" >设置向导</a></li>
+                <li><a href="javascript:void(0);" >远程控制</a></li>
+                <li><a href="javascript:void(0);" >密码修改</a></li>
+                <li><a href="javascript:void(0);" >版本升级</a></li>
+                <li><a href="javascript:void(0);" >恢复出厂设置</a></li>
+                <li><a href="javascript:void(0);" >重新启动</a></li>
+                <li><!--空间占位--></li>
+           </ul>
+        </li>
+        
+        
+        
+        
+
+    </ul>
+</div>
+<!--左侧-end-->
+
+<!--内容-->
+<div class="right">
+	<div class="right_t">
+    	<div class="right_nav">
+            <a href="javascript:void(0);" ><img src="images/back_nav_bg.png" title="返回首页" alt="返回首页"></a>
+            <a href="javascript:void(0);" >首页</a>
+            <span>>></span>
+            <a href="javascript:void(0);" >一级</a>
+            <span>>></span>
+            <a href="javascript:void(0);" >二级</a>
+        </div>
+        <div class="nav_date fr">
+        	<p>2015-6-6</p>
+            <p>10:15:36</p>
+            <p>星期日</p>
+        </div>
+	</div><!--back_center_t-end-->
+
+
+    <div class="back_center clearfix">
+    
+        <div class="box rounded-box" >
+			<div class="clearfix pdg20-LR ">
+            	
+                <div class="border-b box-tit clearfix">
+                    <h4 class="fl">一键禁止娱乐网站</h4>
+                    <div class="borde-help">
+                        <a class="bnt-help" title="帮助"></a>
+                        <div class="borde-prompt" style="z-index: 100; display: none;">
+                            <span class="vtipGL"></span>
+                            <div class="rounded-box borde-txt">
+                                <p class="msg">暂无帮助信息</p>
+                                <p class="tr"><br><a target="_blank" class="more-help-info" href="http://www.ikuai8.com/support_article.php?id=0000000499" style=" color:#FFF; text-decoration: underline;">点击获取更多帮助</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+                <div class="H10 col"></div>
+                <div class="fc seitchHF-radio fl">
+                    <div class="H20"></div>
+                    <div class="menu">
+                        <label class="radio radio-hidden menu-tit menu-tit-pad50 active" style="">
+                            <input name="mr_dc" checked="checked" type="radio">
+                            禁止网站类型
+                        </label>
+                        <label class="radio radio-hidden menu-tit menu-tit-pad50" style=" border-left:1px solid #0088cc;">
+                            <input name="mr_dc" type="radio">
+                            自定义网址库
+                        </label>
+                    </div>
+                    <div class="H20 col"></div>
+                </div>
+
+                <!--网页访问控制-->
+                <div class="seitchHF-div col">
+                    <div class="table-every-top clearfix">
+                        <a class="but_h26 R_bg rounded fr del-bulk" style="margin-left:10px;" href="javascript:void(0);" onclick="showjqm('.check-box' ,true)">删除</a>
+                        <a class="but_h26 B_bg rounded fr disable-bulk" style="margin-left:10px;" href="javascript:void(0);" onclick="showjqm('.check-box' ,true)">停用</a>
+                        <a class="but_h26 B_bg rounded fr enable-bulk" style="margin-left:10px;" href="javascript:void(0);" onclick="showjqm('.check-box' ,true)">启用</a>
+                        <a class="but_h26 B_bg rounded fr export" style=" margin-left:10px;" href="javascript:void(0);">导出</a>
+                        <a class="but_h26 B_bg rounded fr import" style=" margin-left:10px;" href="javascript:void(0);" onclick="showjqm('.showImport' ,true)">导入</a>
+                        <a class="but_h26 G_bg rounded fr add add_static" style="margin-left:10px;" href="javascript:void(0);">添加</a>
+
+                    </div>
+
+                    <table class="table-every flow-table rounded" style="" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+
+                            <th width="5%">编号</th>
+                            <th width="12%">网站类型</th>
+                            <th width="13%">内网IP</th>
+                            <th width="15%">周期</th>
+                            <th width="10%">生效时间</th>
+                            <th width="15%">备注</th>
+                            <th width="10%">状态</th>
+                            <th width="10%">操作</th>
+                            <th width="5%"><input class="chk_all"  type="checkbox"></th>
+                        </tr>
+                        <tr class="item-show">
+                            <td>11</td>
+                            <td>xxx</td>
+                            <td>xxx</td>
+                            <td>xxx</td>
+                            <td>xxx</td>
+                            <td>xxx</td>
+                            <td><p class="colorG">已启用</p></td>
+                            <td>
+                                <a class="table-a del colorR" href="javascript:void(0);" onclick="showjqm('.check-box' ,true)">停用</a>
+                                <a class="table-a click-to-edit" href="javascript:void(0);">编辑</a>
+                                <a class="table-a del colorR" href="javascript:void(0);">删除</a>
+                            </td>
+                            <td>
+                                <input name="chk_list" value="" type="checkbox">
+                            </td>
+                        </tr>
+                        <tr class="item-edit">
+                            <td>new</td>
+                            <td>
+                                <input style="margin-left:5px; width:90%;" class="inptText rounded" type="text" onclick="showjqm('.net-types' ,true)"/>
+                            </td>
+                            <td>
+                                <input style="margin-left:5px; width:90%;" class="inptText rounded" type="text" onclick="showjqm('.ip-box' ,true)"/>
+                            </td>
+                            <td>
+                                <div class="selectBox fl">
+                                    <input class="inptText selectInpt rounded" readonly="readonly" name="" value="HTTP" style="background-position: right 0px;" type="text">
+                                    <ul class="selectUl select_week" style="display: none;">
+                                        <li>
+                                            <input checked="checked" type="checkbox"><span>星期一</span>
+                                        </li>
+                                        <li>
+                                            <input checked="checked" type="checkbox"><span>星期二</span>
+                                        </li>
+                                        <li>
+                                            <input checked="checked" type="checkbox"><span>星期三</span>
+                                        </li>
+                                        <li>
+                                            <input checked="checked" type="checkbox"><span>星期四</span>
+                                        </li>
+                                        <li>
+                                            <input checked="checked" type="checkbox"><span>星期五</span>
+                                        </li>
+                                        <li>
+                                            <input checked="checked" type="checkbox"><span>星期六</span>
+                                        </li>
+                                        <li>
+                                            <input checked="checked" type="checkbox"><span>星期日</span>
+                                        </li>
+                                        <li>
+                                            <a class="but_h26 B_bg rounded" href="javascript:void(0);" style="margin: 0 20px;">确定</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td><input style="margin-left:5px; width:90%;" class="inptText rounded inptText-Error" tip="时间段范围:00:00-23:59" type="text"></td>
+                            <td><input style="margin-left:5px; width:90%;" class="inptText rounded" type="text"></td>
+                            <td><p class="colorG">已启用</p></td>
+                            <td>
+                                <a class="table-a" href="javascript:void(0);" >确定</a>
+                                <a class="table-a del colorR click-to-cancel" href="javascript:void(0);">取消</a>
+                            </td>
+                            <td>
+                                <input name="chk_list" value="" type="checkbox">
+                            </td>
+                        </tr>
+                    </table>
+                    <!--网页访问控制-->
+
+                    <div class="H20"></div>
+
+                    <div class="fc div-tab">
+                    <!--翻页条-->
+                    <div class="page_div clearfix">
+                            <p>每页</p>
+                            <input name="" style=" " type="text" value="" />
+                            <p>条</p>
+                            <p style=" margin-right:10px;">共64条</p>
+
+                            <a class="firstpage"></a>
+                            <a class="fpage_l"></a>
+                            <a>1</a>
+                            <a class="cur">2</a>
+                            <a>3</a>
+                            <p class="p-cur">...</p>
+                            <a>10</a>
+                            <a>11</a>
+                            <a>1002</a>
+                            <a class="fpage_r"></a>
+                            <a class="lastpage"></a>
+
+                            <input name="" class="page_ipt" style=" width:40px; margin-right:0; margin-left:10px;" type="text" value="" />
+                            <p style="margin:0;">/&nbsp;7页</p>
+                            <input class="btn B_bg" type="button" style=" " value="跳转"  />
+                    </div>
+                    <!--翻页条-end-->
+                    </div>
+
+
+                    <div class="H40"></div>
+                </div>
+                <div class="seitchHF-div col">
+                    <div class="table-every-top clearfix">
+                        <a class="but_h26 R_bg rounded fr del-bulk" style="margin-left:10px;" href="javascript:void(0);" onclick="showjqm('.check-box' ,true)">删除</a>
+                        <a class="but_h26 B_bg rounded fr export" style=" margin-left:10px;" href="javascript:void(0);">导出</a>
+                        <a class="but_h26 B_bg rounded fr import" style=" margin-left:10px;" href="javascript:void(0);" onclick="showjqm('.showImport' ,true)">导入</a>
+                        <a class="but_h26 G_bg rounded fr add add_static" style="margin-left:10px;" href="javascript:void(0);">添加</a>
+                        <a class="but_h26 G_bg rounded fr add add_static" style="margin-left:10px;" href="javascript:void(0);" onclick="showjqm('.net-content' ,false)">查询系统网址</a>
+                    </div>
+
+                    <table class="table-every flow-table rounded" style="" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+
+                            <th width="5%">编号</th>
+                            <th width="25%">类别</th>
+                            <th width="25%">类型</th>
+                            <th width="30%">网址</th>
+                            <th width="10%">操作</th>
+                            <th width="5%"><input class="chk_all"  type="checkbox"></th>
+                        </tr>
+                        <tr class="item-show">
+                            <td>1</td>
+                            <td>xxxxxxxx</td>
+                            <td>xxx</td>
+                            <td>xxx</td>
+                            <td>
+                                <a class="table-a del colorR" href="javascript:void(0);" onclick="showjqm('.check-box' ,true)">停用</a>
+                                <a class="table-a click-to-edit" href="javascript:void(0);">编辑</a>
+                                <a class="table-a del colorR" href="javascript:void(0);">删除</a>
+                            </td>
+                            <td>
+                                <input name="chk_list" value="" type="checkbox">
+                            </td>
+                        </tr>
+                        <tr class="item-edit">
+                            <td>new</td>
+                            <td>
+                                <div class="selectBox fl">
+                                    <input class="inptText selectInpt rounded" readonly="readonly" name="" value="生活娱乐" style="background-position: right 0px;" type="text">
+                                    <ul class="selectUl dot-type">
+                                        <li>生活娱乐</li>
+                                        <li>HTTP</li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="selectBox fl">
+                                    <input class="inptText selectInpt rounded" readonly="readonly" name="" value="生活娱乐" style="background-position: right 0px;" type="text">
+                                    <ul class="selectUl dot-type">
+                                        <li>生活娱乐</li>
+                                        <li>HTTP</li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td><input style="margin-left:5px; width:90%;" class="inptText rounded" type="text" onclick="showjqm('.batch-add' ,false)"/></td>
+                            <td>
+                                <a class="table-a" href="javascript:void(0);" >确定</a>
+                                <a class="table-a del colorR click-to-cancel" href="javascript:void(0);">取消</a>
+                            </td>
+                            <td>
+                                <input name="chk_list" value="" type="checkbox">
+                            </td>
+                        </tr>
+                    </table>
+
+                </div>
+                <div class="H40"></div>
+        	</div><!--- pdg20-LR end-->
+        </div><!--rounded-box-->
+    
+    </div><!--back_center--end-->
+</div><!--内容-end-->
+
+<!-- 添加IP onclick="showjqm('.restrict-box' ,true)" -->
+<div class="jqmWindow rounded-box showdiv800 ip-box">
+    <div class="jqmWindowTit">
+        <p class="fl">添加IP</p>
+        <a class="jqmWindowClose jqmClose fr" title="关闭"></a>
+    </div>
+    <div class="jqmWindow_box" style=" overflow:hidden;">
+        <div class="H30"></div>
+        <table class="table" style=" width:100%; margin: 20px 30px;" cellspacing="0" cellpadding="5" border="0">
+            <tr>
+
+                <td colspan="3" width="40%"><span style="width: 120px; display: inline-block; width: 60px;">IP：</span><input reg="ip_allow_empty" class="inputW100 input_Edit ipsA inptText rounded" type="text"></td>
+                <td width="10%"><a href="javascript:void(0);" class="addA but_h26 G_bg rounded fr" style="padding: 8px 34px;">添加IP&gt;&gt;</a></td>
+                <td rowspan="4">
+                    <select multiple="multiple" name="sec[]3" id="iplist" class="inptText rounded opts input_Edit" style=" height:133px; margin-left: 35px; width:240px; font-family: Tahoma,Arial,Helvetica,sans-serif,'微软雅黑';  color: #666666; *width:260px;  *margin:2px -2px">
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="3" rowspan="2"><span style="width: 120px; display: inline-block; width: 60px;">IP分组：</span><select multiple="multiple" name="" class="inptText rounded ipsC input_Edit" style=" height:70px; width:220px; vertical-align: top; font-family: Tahoma,Arial,Helvetica,sans-serif,'微软雅黑';  color: #666666; *width:260px;  *margin:2px -2px">
+                    <option>bnnbjnbk</option>                                </select></td>
+                <td><a href="javascript:void(0);" class="addC but_h26 G_bg rounded fr">添加IP分组&gt;&gt;</a></td>
+            </tr>
+            <tr>
+                <td><a href="javascript:void(0);" class="dels but_h26 rounded R_bg">删除</a></td>
+            </tr>
+        </table>
+        <div class="H30"></div>
+    </div>
+    <div class="jqmWindowBmt">
+        <div class="H15"></div>
+        <div class="fc div-tab">
+            <input class="but_h30 gray_bg rounded fr jqmClose" style=" margin-left:10px;" type="button" value="取消">
+            <input class="but_h30 G_bg rounded fr" type="button" value="确定">
+        </div>
+        <div class="H15"></div>
+    </div>
+</div>
+<!-- 添加IP END -->
+
+
+<!-- 网站类型 onclick="showjqm('.net-types' ,true)" -->
+<div class="jqmWindow rounded-box showdiv600 net-types" style="width: 700px;">
+    <div class="jqmWindowTit">
+        <p class="fl">选择网站类型</p>
+        <a class="jqmWindowClose jqmClose fr" title="关闭"></a>
+    </div>
+    <div class="jqmWindow_box" style=" overflow:hidden; padding: 0 30px;">
+        <div class="table-every-top clearfix">
+            <div class="fl margin-r">
+                <input class="inptText rounded" placeholder="请输入查询内容" type="text">
+            </div>
+
+            <a class="but_h26 B_bg fl" href="javascript:void(0);">查询</a>
+        </div>
+        <table border="0" cellspacing="0" cellpadding="0" id="protocol-tree" class="treeConbox fl" width="100%">
+            <tbody><tr>
+                <td>
+                    <div class="treeLeft rounded">
+                        <ul>
+                            <li class="treeItem" style="display: block;">
+                                <img src="images/bullet_toggle_plus.png" class="img_1">
+                                <img class="folderImage" src="images/fileTee.png">&nbsp;
+                                <span class="textHolder" style="font-size: 12px; font-weight: bold; color: rgb(119, 119, 119);">所有协议</span>
+                                <ul class="myTree">
+                                    <li class="treeItem" style="display: block;">
+                                        <img src="images/bullet_toggle_plus.png" class="img_1">
+                                        <img class="folderImage" src="images/fileTee.png">&nbsp;
+                                        <span class="textHolder" style="color: rgb(119, 119, 119);">HTTP协议</span>
+                                        <ul class="myTree">
+                                            <li class="treeItem" style="display: block; color: rgb(119, 119, 119);">
+                                                <img src="images/bullet_toggle_minus.png" class="img_1">
+                                                <img class="folderImage" src="..images/fileTee.png">&nbsp;
+                                                <span class="textHolder" style="">HTTP协议</span>
+                                            <ul style="display: block;">
+                                        <li class="treeTtem" style="display: block;">
+                                        <img class="folderImage" src="..images/filetext.png">&nbsp;
+                                        <span class="textHolder" style="color: rgb(119, 119, 119);">网页浏览</span>
+                                        </li>
+                                        <li class="treeTtem" style="display: block;"><img class="folderImage" src="..images/filetext.png">&nbsp;<span class="textHolder" style="color: rgb(119, 119, 119);">网页代理</span></li><li class="treeTtem" style="display: block;"><img class="folderImage" src="..images/filetext.png">&nbsp;<span class="textHolder" style="color: rgb(119, 119, 119);">QQ空间</span></li><li class="treeTtem" style="display: block;"><img class="folderImage" src="..images/filetext.png">&nbsp;<span class="textHolder" style="color: rgb(119, 119, 119);">其他HTTP</span></li><li class="treeTtem" style="display: block;"><img class="folderImage" src="..images/filetext.png">&nbsp;<span class="textHolder" style="color: rgb(119, 119, 119);">12306网络购票</span></li><li class="treeTtem" style="display: block;"><img class="folderImage" src="..images/filetext.png">&nbsp;<span class="textHolder" style="color: rgb(119, 119, 119);">HTTP404错误</span></li><li class="treeTtem" style="display: block;"><img class="folderImage" src="..images/filetext.png">&nbsp;<span class="textHolder" style="color: rgb(119, 119, 119);">HTTPS</span></li></ul></li></ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </td>
+                <td>
+                    <a class="treeAdd but_h26 G_bg rounded" style=" margin:0 10px;">添加协议</a>
+                    <br><br>
+                    <a class="treeDel but_h26 R_bg rounded" style=" margin:0 10px;">删除协议</a>
+                </td>
+                <td>
+                    <select multiple="multiple" class="xieyi inptText rounded"></select>
+                </td>
+            </tr>
+            </tbody></table>
+
+    </div>
+    <div class="H30"></div>
+    <div class="jqmWindowBmt">
+        <div class="H15"></div>
+        <div class="fc div-tab">
+            <input class="but_h30 gray_bg rounded fr jqmClose" style=" margin-left:10px;" type="button" value="取消">
+            <input class="but_h30 G_bg rounded fr" type="button" value="确定">
+        </div>
+        <div class="H15"></div>
+    </div>
+</div>
+<!-- 网站类型 END -->
+
+
+<!-- 确认 onclick="showjqm('.check-box' ,false)" -->
+<div class="jqmWindow rounded-box showdiv300 check-box">
+    <div class="jqmWindowTit">
+        <p class="fl">提示</p>
+        <a class="jqmWindowClose jqmClose fr" title="关闭"></a>
+    </div>
+    <div class="jqmWindow_box" style=" overflow:hidden;">
+        <table style=" width:80%; margin:20px auto;" border="0" cellspacing="0" cellpadding="6">
+            <tr>
+                <td class="tc">
+                    <div class="H20"></div>
+                    <span class="plaint-img"></span>
+                    <span>&nbsp;是否执行此操作</span>
+                    <div class="H20"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="fc div-tab">
+                        <input class="but_h30 gray_bg rounded fr jqmClose" style=" margin-left:10px;" type="button" value="取消">
+                        <input class="but_h30 G_bg rounded fr" type="button" value="确定">
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+<!-- 确认 END -->
+
+<!-- 批量添加 onclick="showjqm('.batch-add' ,false)" -->
+<div class="jqmWindow rounded-box showdiv600 batch-add">
+    <div class="jqmWindowTit">
+        <p class="fl">批量添加</p>
+        <a class="jqmWindowClose jqmClose fr" title="关闭"></a>
+    </div>
+    <div class="jqmWindow_box" style=" overflow:hidden; padding: 30px;">
+        <textarea class="inptText" rows="" cols="" style="width: 520px; max-width: 520px; height: 300px; resize: none;">
+
+        </textarea>
+        <div class="H20"></div>
+        <div> 提示：批量添加网址，每行输入一个网址</div>
+    </div>
+    <div class="jqmWindowBmt">
+        <div class="H15"></div>
+        <div class="fc div-tab">
+            <input class="but_h30 gray_bg rounded fr jqmClose" style=" margin-left:10px;" type="button" value="取消">
+            <input class="but_h30 G_bg rounded fr" type="button" value="确定">
+        </div>
+        <div class="H15"></div>
+    </div>
+</div>
+<!-- 确认 END -->
+
+<!-- 查询系统网址 onclick="showjqm('.net-content' ,false)" -->
+<div class="jqmWindow rounded-box showdiv800 net-content">
+    <div class="jqmWindowTit">
+        <p class="fl">查询系统网址</p>
+        <a class="jqmWindowClose jqmClose fr" title="关闭"></a>
+    </div>
+    <div class="jqmWindow_box" style=" overflow:hidden; padding: 0 20px;">
+        <div class="table-every-top clearfix">
+            <div class="fl margin-r">
+                请输入查询网址：
+                <input class="inptText rounded" placeholder="请输入查询内容" type="text">
+            </div>
+
+            <a class="but_h26 B_bg fl" href="javascript:void(0);">查询</a>
+        </div>
+        <table style=" width:100%; " border="0" cellspacing="0" cellpadding="0" class="table-every flow-table rounded">
+            <tr>
+                <th>编号</th>
+                <th>类别</th>
+                <th>网址</th>
+                <th>网站</th>
+            </tr>
+            <tr>
+                <td>xxx</td>
+                <td>娱乐网站</td>
+                <td>xxxxx</td>
+                <td>xxxxxxxxxx</td>
+            </tr>
+        </table>
+        <div class="H20"></div>
+    </div>
+    <div class="jqmWindowBmt">
+        <div class="H15"></div>
+        <div class="fc div-tab">
+            <input class="but_h30 gray_bg rounded fr jqmClose" style=" margin-left:10px;" value="取消" type="button">
+            <input class="but_h30 G_bg rounded fr" value="确定" type="button">
+        </div>
+        <div class="H15"></div>
+    </div>
+</div>
+<!-- 查询系统网址 END -->
+
+
+
+
+<script type="text/javascript">
+    $(".click-to-edit").click(function(){
+        $(".item-edit").show();
+        $(".item-show").hide();
+    });
+    $(".click-to-cancel").click(function(){
+        $(".item-edit").hide();
+        $(".item-show").show();
+    });
+
+    /*协议*/
+    $(document).ready(function(){
+
+        //初始化
+        $(".xieyi").empty();
+        $(".textHolder").each(function(){
+            $(this).parent(".treeTtem").css({"display":"block"});
+            $(this).parent(".treeItem").css({"display":"block"});
+            $(this).css({"color":"#777","background-color":""});
+        });
+        $("#white_content").show();
+        var mythis = $(this);
+        var cont = $(this).val();
+        if(cont){
+            var arr = cont.split(',');
+            for(var i=0;i<=arr.length;i++){
+                if(arr[i]){
+                    $("<option>"+arr[i]+"</option>").appendTo(".xieyi");
+                }
+            }
+        }
+        //点击效果
+        $(".treeLeft").find(".textHolder").click(function(){
+            if($(this).css("color") == "rgb(255, 255, 255)"){
+                $(this).css({"color":"#777","background-color":""});
+
+            }else if($(this).css("color") != "rgb(255, 255, 255)"){
+
+                $(this).css({"color":"rgb(255, 255, 255)","background-color":"#3594d8"});
+
+                $(this).siblings("ul").hide();
+
+                $(this).siblings(".img_1").attr("src","images/bullet_toggle_plus.png");
+                $(this).siblings("ul").find(".textHolder").each(function(){
+                    if($(this).css("color") == "rgb(255, 255, 255)"){
+                        $(this).css({"color":"#777","background-color":""});
+                    }
+                });
+                $(this).parents("ul").siblings(".textHolder").each(function(){
+                    if($(this).css("color") == "rgb(255, 255, 255)"){
+                        $(this).css({"color":"#777","background-color":""});
+                    };
+                });
+            }
+
+        })
+
+
+        //添加
+        $(".treeAdd").click(function(){
+
+            $(".textHolder").each(function(){
+                if($(this).css("color") == "rgb(255, 255, 255)"){
+                    var pro =  $(this).text();
+                    if(pro=="所有协议" && document.title == '网络设置-分流设置')return false;
+                    $(this).parent("li").find("span").each(function(){
+                        var textSpan = $(this).html();
+                        $(".xieyi").find("option").each(function(){
+                            if( textSpan == $(this).html()){
+                                $(this).remove();
+                            }
+                        })
+                    })
+                    $("<option>"+pro+"</option>").appendTo(".xieyi");
+                    $(this).css({color:"","background-color":""});
+                    $(this).parent(".treeTtem").css({display:"none"});
+                    $(this).parent(".treeItem").css({display:"none"});
+                }
+            })
+        });
+
+        //删除
+        $(".treeDel").click(function(){
+            $(".xieyi").find("option").each(function(){
+                if($(this).attr("selected") == "selected"){
+                    var optionTxt = $(this).html()
+                    $(".treeLeft").find("li").each(function(){
+                        if(optionTxt == $(this).find("span").html()){
+                            $(this).css({"color":"#777"});
+                            $(this).css({"display":"block"});
+                        }
+                    })
+                    $(this).remove();
+                }
+            })
+        })
+
+        //折叠树
+        $(".myTree").find("UL").hide();
+        $(".treeLeft").find(".img_1").click(function(){
+            var ul_show = $(this).parent().children("UL");
+            if(ul_show.css("display") == "none"){
+                $(this).attr("src","images/bullet_toggle_minus.png");
+                ul_show.show();
+            }else{
+                $(this).attr("src","images/bullet_toggle_plus.png");
+                ul_show.hide();
+            }
+        })
+
+
+    })
+    /*协议-end*/
+
+</script>
+
+</body>
+</html>
+
+
